@@ -2,19 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83c19ed0-ea0c-4a7c-b994-9b8c2eed3813" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/upload.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/formValidation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/formValidation.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/formvalidationbootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/upload.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/autoload.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/date-filteration.php" afterPath="$PROJECT_DIR$/ajax/date-filteration.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/daterangepicker.css" afterPath="$PROJECT_DIR$/css/daterangepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/headerfile.php" afterPath="$PROJECT_DIR$/include/headerfile.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bootstrap-datetimepicker.min.js" afterPath="$PROJECT_DIR$/js/bootstrap-datetimepicker.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/daterangepicker.js" afterPath="$PROJECT_DIR$/js/daterangepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/modele/Connection.php" afterPath="$PROJECT_DIR$/mvc/modele/Connection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/UserManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/UserManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/modele/Evenement.php" afterPath="$PROJECT_DIR$/mvc/modele/Evenement.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoeve.php" afterPath="$PROJECT_DIR$/nvoeve.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoevesuite.php" afterPath="$PROJECT_DIR$/nvoevesuite.php" />
     </list>
     <ignored path="azan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,6 +57,34 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="typephoto" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - azan@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="photos" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="MySQL - azan@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="evenement" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -67,59 +96,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TypeEvenementManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php">
+      <file leaf-file-name="nvoevesuite.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-              <folding>
-                <marker date="1466778474020" expanded="true" signature="359:423" placeholder="INSERT INTO typeevenement... " />
-                <marker date="1466778474020" expanded="true" signature="1112:1181" placeholder="UPDATE typee... " />
-                <marker date="1466778474020" expanded="true" signature="1922:1961" placeholder="DELETE FROM " />
-              </folding>
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="129" column="39" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvenementManager.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EvenementManager.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvc/controleur/EvenementManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/controleur/MessageManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PhotosManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.625">
-              <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.62249">
+              <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
               <folding>
-                <marker date="1466980375153" expanded="true" signature="326:401" placeholder="INSERT INTO photos... " />
-                <marker date="1466980375153" expanded="true" signature="1131:1213" placeholder="UPDATE photo... " />
-                <marker date="1466980375153" expanded="true" signature="2003:2035" placeholder="DELETE FROM " />
+                <marker date="1468143447768" expanded="true" signature="327:596" placeholder="INSERT INTO user... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searcheve.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/searcheve.php">
+      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/upload.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-51.25">
-              <caret line="84" column="44" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="163" column="15" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -128,8 +131,8 @@
       <file leaf-file-name="date-filteration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <marker date="1468135021644" expanded="true" signature="431:515" placeholder="SELECT * FRO... evenement" />
                 <marker date="1468135021644" expanded="true" signature="720:812" placeholder="SELECT p.lie... photos" />
@@ -144,46 +147,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0">
-              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="azan.evenement" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.evenement">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nvoeve2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nvoeve2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nvoeve.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nvoeve.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nvoeve.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0248448">
-              <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+              <folding>
+                <marker date="1468143377174" expanded="true" signature="2446:2473" placeholder="select * fro... typeevenement" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="formValidation.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/formValidation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -215,13 +195,9 @@
         <option value="$PROJECT_DIR$/mvc/controleur/ParticipationManager.php" />
         <option value="$PROJECT_DIR$/mvc/controleur/MessageManager.php" />
         <option value="$PROJECT_DIR$/autoload.php" />
-        <option value="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/console.sql" />
         <option value="$PROJECT_DIR$/mvc/modele/User.php" />
-        <option value="$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php" />
         <option value="$PROJECT_DIR$/mvc/modele/Photos.php" />
-        <option value="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
-        <option value="$PROJECT_DIR$/mvc/controleur/UserManager.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
         <option value="$PROJECT_DIR$/searcheve.css" />
@@ -247,17 +223,21 @@
         <option value="$PROJECT_DIR$/js/upload.php" />
         <option value="$PROJECT_DIR$/css/upload.css" />
         <option value="$PROJECT_DIR$/css/pulierArticle.css" />
-        <option value="$PROJECT_DIR$/js/formValidation.js" />
         <option value="$PROJECT_DIR$/ajax/upload.php" />
         <option value="$PROJECT_DIR$/css/daterangepicker.css" />
         <option value="$PROJECT_DIR$/js/daterangepicker.js" />
         <option value="$PROJECT_DIR$/mvc/controleur/autoload.php" />
+        <option value="$PROJECT_DIR$/ajax/date-filteration.php" />
+        <option value="$PROJECT_DIR$/mvc/modele/Connection.php" />
+        <option value="$PROJECT_DIR$/js/formValidation.js" />
+        <option value="$PROJECT_DIR$/mvc/controleur/UserManager.php" />
+        <option value="$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php" />
+        <option value="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
+        <option value="$PROJECT_DIR$/nvoeve.php" />
+        <option value="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
         <option value="$PROJECT_DIR$/js/upload.js" />
         <option value="$PROJECT_DIR$/nvoevesuite.php" />
         <option value="$PROJECT_DIR$/mvc/modele/Evenement.php" />
-        <option value="$PROJECT_DIR$/nvoeve.php" />
-        <option value="$PROJECT_DIR$/ajax/date-filteration.php" />
-        <option value="$PROJECT_DIR$/mvc/modele/Connection.php" />
       </list>
     </option>
   </component>
@@ -408,20 +388,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="azan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="azan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -440,7 +406,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../upload" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../siberie" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="122" />
@@ -517,6 +483,25 @@
       <option name="number" value="Default" />
       <updated>1466704500970</updated>
     </task>
+    <task id="LOCAL-00001" summary="Il reste à paramétrer le calendar maxdate">
+      <created>1468136799405</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1468136799405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="suite d'envoi publication">
+      <created>1468138175269</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1468138175269</updated>
+    </task>
+    <task id="LOCAL-00003" summary="suite d'envoi publication (2)">
+      <created>1468138208932</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1468138208932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -526,9 +511,10 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1927468" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16319677" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -541,7 +527,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
@@ -559,20 +544,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Il reste à paramétrer le calendar maxdate" />
-    <option name="LAST_COMMIT_MESSAGE" value="Il reste à paramétrer le calendar maxdate" />
+    <MESSAGE value="suite d'envoi publication" />
+    <MESSAGE value="suite d'envoi publication (2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="suite d'envoi publication (2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/ParticipationManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://DATABASE/a82fa4c9-09b8-4d28-aa3f-259663ec51f9">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -629,13 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30120483">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -717,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/UserManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="86" selection-start-line="129" selection-start-column="86" selection-end-line="129" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.625">
@@ -752,6 +718,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,17 +796,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/formValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7081712">
-          <caret line="80" column="79" selection-start-line="80" selection-start-column="79" selection-end-line="80" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/pulierArticle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09638554">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -847,6 +808,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34136546">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -881,38 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="88" column="64" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/modele/Evenement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.375">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.typeevenement">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -926,26 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding>
-            <marker date="1466778474020" expanded="true" signature="359:423" placeholder="INSERT INTO typeevenement... " />
-            <marker date="1466778474020" expanded="true" signature="1112:1181" placeholder="UPDATE typee... " />
-            <marker date="1466778474020" expanded="true" signature="1922:1961" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/EvenementManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/controleur/MessageManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25">
@@ -954,40 +864,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.625">
-          <caret line="74" column="61" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
-          <folding>
-            <marker date="1466980375153" expanded="true" signature="326:401" placeholder="INSERT INTO photos... " />
-            <marker date="1466980375153" expanded="true" signature="1131:1213" placeholder="UPDATE photo... " />
-            <marker date="1466980375153" expanded="true" signature="2003:2035" placeholder="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/searcheve.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-51.25">
           <caret line="84" column="44" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="54" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <marker date="1468135021644" expanded="true" signature="431:515" placeholder="SELECT * FRO... evenement" />
-            <marker date="1468135021644" expanded="true" signature="720:812" placeholder="SELECT p.lie... photos" />
-            <marker date="1468135021644" expanded="true" signature="1008:1704" placeholder="..." />
-            <marker date="1468135021644" expanded="true" signature="1030:1698" placeholder="..." />
-            <marker date="1468135021644" expanded="true" signature="1057:1465" placeholder="..." />
-            <marker date="1468135021644" expanded="true" signature="1092:1216" placeholder="..." />
-            <marker date="1468135021644" expanded="true" signature="1144:1157" placeholder="..." />
-            <marker date="1468135021644" expanded="true" signature="1240:1459" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,11 +901,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1468135021644" expanded="true" signature="431:515" placeholder="SELECT * FRO... evenement" />
+            <marker date="1468135021644" expanded="true" signature="720:812" placeholder="SELECT p.lie... photos" />
+            <marker date="1468135021644" expanded="true" signature="1008:1704" placeholder="..." />
+            <marker date="1468135021644" expanded="true" signature="1030:1698" placeholder="..." />
+            <marker date="1468135021644" expanded="true" signature="1057:1465" placeholder="..." />
+            <marker date="1468135021644" expanded="true" signature="1092:1216" placeholder="..." />
+            <marker date="1468135021644" expanded="true" signature="1144:1157" placeholder="..." />
+            <marker date="1468135021644" expanded="true" signature="1240:1459" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.typephoto">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/formValidation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.060240965">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/UserManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04016064">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1468142942884" expanded="true" signature="309:432" placeholder="INSERT INTO user... " />
+            <marker date="1468142942884" expanded="true" signature="1317:1472" placeholder="UPDATE user " />
+            <marker date="1468142942884" expanded="true" signature="2484:2533" placeholder="UPDATE user " />
+            <marker date="1468142942884" expanded="true" signature="3193:3227" placeholder="DELETE FROM " />
+            <marker date="1468142942884" expanded="true" signature="3845:3897" placeholder="select passw... user" />
+            <marker date="1468142942884" expanded="true" signature="4319:4364" placeholder="SELECT * FRO... user" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/TypeEvenementManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04016064">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1468143028157" expanded="true" signature="353:417" placeholder="INSERT INTO typeevenement... " />
+            <marker date="1468143028157" expanded="true" signature="1106:1175" placeholder="UPDATE typee... " />
+            <marker date="1468143028157" expanded="true" signature="1916:1955" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04016064">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding>
+            <marker date="1468143062278" expanded="true" signature="320:395" placeholder="INSERT INTO photos... " />
+            <marker date="1468143062278" expanded="true" signature="1125:1207" placeholder="UPDATE photo... " />
+            <marker date="1468143062278" expanded="true" signature="1997:2029" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="129" column="39" selection-start-line="129" selection-start-column="39" selection-end-line="129" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nvoeve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0248448">
-          <caret line="33" column="68" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="68" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <marker date="1468143377174" expanded="true" signature="2446:2473" placeholder="select * fro... typeevenement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="15" selection-start-line="163" selection-start-column="15" selection-end-line="163" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/modele/Evenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5421687">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/EvenementManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.62249">
+          <caret line="31" column="67" selection-start-line="31" selection-start-column="67" selection-end-line="31" selection-end-column="67" />
+          <folding>
+            <marker date="1468143447768" expanded="true" signature="327:596" placeholder="INSERT INTO user... " />
+          </folding>
         </state>
       </provider>
     </entry>

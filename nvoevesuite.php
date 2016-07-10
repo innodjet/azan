@@ -37,7 +37,7 @@ include_once 'mvc/controleur/autoload.php';
             <div class="col-xs-12 col-md-12 col-lg-3">
                 <h4>Photo de couverture</h4>
                 <div id="filediv_couv"><input accept="image/*"
-                        name="file[]" type="file" id="file"/></div>
+                        name="file[]" type="file" id="file_couv"/></div>
                 <br/>
 
                 <input type="button" id="add_more_couv" class="upload" value="Plus de photos"/>
@@ -76,6 +76,17 @@ include_once 'mvc/controleur/autoload.php';
 
         </div>
 
+        <div class="row">
+
+            <div class="col-xs-12 col-md-12 col-lg-3 ">
+                <h4>Photo représentative</h4>
+                <div id="filediv_rep"><input accept="image/*"
+                                             name="file_rep[]" type="file" id="file_rep"/></div>
+                <br/>
+            </div>
+
+        </div>
+
 
         <div class="form-group">
             <label class="col-md-4 control-label"></label>
@@ -87,7 +98,7 @@ include_once 'mvc/controleur/autoload.php';
                 </button>
 
                 <button type="submit" class="btn btn-success btn-lg btn3d">
-                    <span class="glyphicon glyphicon-ok"></span> Valider
+                    <span class="glyphicon glyphicon-ok" id="valider"></span> Valider
                 </button>
 
                 <button type="reset" class="btn3d btn btn-danger btn-lg">
@@ -109,16 +120,24 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+var_dump($_SESSION);
+
 $target_path = "dossier/";
 $tab = array();
 
-$pdo = Connection::getConnexion();
-$evenement = new Evenement($_SESSION['nomEve'],$_SESSION['lieuEve'],$_SESSION['dateMiseEnLigneEve'],$_SESSION['datedebutEve'],
-    $_SESSION['datefinEve'],$_SESSION['prixEve'],$_SESSION['descriptionEve'],$_SESSION['prixEve'],$_SESSION['prixEve']);
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $j = 0; //Variable for indexing uploaded image
     global $target_path,$tab;
+
+
+    $pdo = Connection::getConnexion();
+    $evenement = new Evenement($_SESSION['nomEve'],$_SESSION['lieuEve'],$_SESSION['dateMiseEnLigneEve'],$_SESSION['datedebutEve'],
+        $_SESSION['datefinEve'],$_SESSION['contactEve'],$_SESSION['prixEve'],$_SESSION['descriptionEve'],$_SESSION['iduser'],$_SESSION['typeEve']);
+
+    $evenementManager = new EvenementManager($pdo);
+    $evenementManager->createEvenement($evenement);
 
     for ($i = 0; $i < count($_FILES['file']['name']); $i++) {//loop to get individual element from the array
 

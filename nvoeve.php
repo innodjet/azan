@@ -14,8 +14,8 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
     $_SESSION['contactEve']=$_POST['contactEve'];
     $_SESSION['descriptionEve']=$_POST['descriptionEve'];
 
-    $_SESSION['iduser']= "2";
-    $_SESSION['descriptionEve']=$_POST['descriptionEve'];
+    $_SESSION['iduser']= "1";
+    $_SESSION['typeEve']=$_POST['type'];
 
     header('Location: nvoevesuite.php');
 
@@ -53,7 +53,10 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
 <body>
 
 
-<?php include 'include/navbar.php'; ?>
+<?php
+include_once 'mvc/controleur/autoload.php';
+include 'include/navbar.php';
+?>
 
 
 
@@ -64,6 +67,33 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
 
         <!-- Form Name -->
         <legend>Publication d'évènement (1/2)</legend>
+
+        <?php
+        $pdo = Connection::getConnexion();
+        $pdo->beginTransaction();
+        $req = $pdo->prepare("select * from typeevenement ");
+        $req->execute();
+        $pdo->commit();
+        $result = $req->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+
+
+        <!-- Type evenement -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" >Type événement</label>
+            <div class="col-md-6">
+                <select name="type">
+                    <option value="">-- Selectionner --</option>
+                    <?php
+                    foreach($result as $value){
+                        echo "<option value=".$value['id'].">".$value['libelle']."</option>";
+                    }
+                    ?>
+                </select>
+            </div>
+        </div>
+
 
         <!-- Nom -->
         <div class="form-group">
@@ -217,10 +247,6 @@ var choix;
 
 
     });
-
-
-    //  minDate: new Date('2016/07/12'),
-    // maxDate: new Date('2016/07/14'),
 
 
 </script>

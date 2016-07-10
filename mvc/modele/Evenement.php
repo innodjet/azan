@@ -49,17 +49,18 @@ class Evenement
 
                 break;
 
-            case 9:
+            case 10:
                 $this->nom = func_get_arg(0);
                 $this->lieu = func_get_arg(1);
                 $this->datePub = func_get_arg(2);
                 $this->dateDb = func_get_arg(3);
                 $this->dateFn = func_get_arg(4);
-                $this->prix = func_get_arg(5);
-                $this->desription = func_get_arg(6);
+                $this->contact = func_get_arg(5);
+                $this->prix = func_get_arg(6);
+                $this->desription = func_get_arg(7);
 
-                $this->user = func_get_arg(7);
-                $this->typePublication = func_get_arg(8);
+                $this->user = func_get_arg(8);
+                $this->typePublication = func_get_arg(9);
                 break;
 
             default:
@@ -179,9 +180,9 @@ class Evenement
     public function setUser($user)
     {
 
-        if ($user instanceof User) {
+       // if ($user instanceof User) {
             $this->user = $user;
-        }
+       // }
 
     }
 
