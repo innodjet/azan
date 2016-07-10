@@ -4,7 +4,8 @@ include_once 'User.php';
 include_once 'TypeEvenement.php';
 
 
-class Evenement{
+class Evenement
+{
 
     private $id;
     protected $nom;
@@ -19,7 +20,8 @@ class Evenement{
     protected $typePublication;
 
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $num = func_num_args();
 
@@ -35,25 +37,29 @@ class Evenement{
                 $this->prix = func_get_arg(7);
                 $this->desription = func_get_arg(8);
 
-                if(func_get_arg(9) instanceof User){
+                $this->user = func_get_arg(9);
+                $this->typePublication = func_get_arg(10);
+                /*if(func_get_arg(9) instanceof User){
                     $this->user = func_get_arg(9);
                 }
                 if(func_get_arg(10) instanceof TypeEvenement){
                     $this->typePublication = func_get_arg(10);
-                }
+                }*/
+
+
                 break;
 
-            case 7:
+            case 9:
                 $this->nom = func_get_arg(0);
                 $this->lieu = func_get_arg(1);
-                $this->dateDb = func_get_arg(2);
-                $this->dateFn = func_get_arg(3);
-                $this->prix = func_get_arg(4);
-                $this->desription = func_get_arg(5);
+                $this->datePub = func_get_arg(2);
+                $this->dateDb = func_get_arg(3);
+                $this->dateFn = func_get_arg(4);
+                $this->prix = func_get_arg(5);
+                $this->desription = func_get_arg(6);
 
-                if(func_get_arg(6) instanceof User){
-                    $this->typePublication = func_get_arg(6);
-                }
+                $this->user = func_get_arg(7);
+                $this->typePublication = func_get_arg(8);
                 break;
 
             default:
@@ -62,10 +68,10 @@ class Evenement{
     }
 
 
-    public function getId(){
+    public function getId()
+    {
         return $this->id;
     }
-
 
 
     public function getNom()
@@ -170,9 +176,10 @@ class Evenement{
     }
 
 
-    public function setUser($user){
+    public function setUser($user)
+    {
 
-        if($user instanceof User){
+        if ($user instanceof User) {
             $this->user = $user;
         }
 
@@ -185,14 +192,14 @@ class Evenement{
     }
 
 
-    public function setTypePublication($typePublication){
+    public function setTypePublication($typePublication)
+    {
 
-        if($typePublication instanceof TypeEvenement){
+        if ($typePublication instanceof TypeEvenement) {
             $this->typePublication = $typePublication;
         }
 
     }
-
 
 
 }
