@@ -84,8 +84,8 @@ include 'include/navbar.php';
         <!-- Type evenement -->
         <div class="form-group">
             <label class="col-md-4 control-label" >Type événement</label>
-            <div class="col-md-6">
-                <select name="type">
+            <div class="col-md-2">
+                <select name="type" class="form-control">
                     <option value="">-- Selectionner --</option>
                     <?php
                     foreach($result as $value){
@@ -95,7 +95,6 @@ include 'include/navbar.php';
                 </select>
             </div>
         </div>
-
 
         <!-- Nom -->
         <div class="form-group">

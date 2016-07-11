@@ -11,7 +11,7 @@ class EvenementManager{
         $this->pdo = $pdo;
     }
 
-    public function createEvenement(Evenement $evenement){
+    public function createEvenement(Evenement $evenement, $tab){
 
         try {
             global $pdo;
@@ -34,7 +34,18 @@ class EvenementManager{
 
 
             $req->execute();
+            $lastId = $pdo->lastInsertId();
+
+
+            $photoManager = new PhotosManager($pdo);
+            foreach($tab as $value){
+                $photos = new Photos($lastId, $value['typePhoto'], $value['fileName']);
+                $photoManager->createPhtotos($photos);
+            }
+
+
             $pdo->commit();
+
 
         } catch (Exception $ex) {
             $pdo->rollback();

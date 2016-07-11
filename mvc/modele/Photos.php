@@ -2,31 +2,35 @@
 
 include_once 'Evenement.php';
 
-class Photos{
+class Photos
+{
 
     private $id;
     protected $evenement;
+    protected $typePhoto;
     protected $lien;
-    protected $sponsor;
 
-    public function __construct(){
+
+
+    public function __construct()
+    {
 
         $num = func_num_args();
 
         switch ($num) {
             case 4:
                 $this->id = func_get_arg(0);
-                if(func_get_arg(1) instanceof Evenement){
-                    $this->evenement = func_get_arg(1);
-                }
-                $this->lien = func_get_arg(2);
-                $this->sponsor = func_get_arg(3);
+                //if(func_get_arg(1) instanceof Evenement){
+                $this->evenement = func_get_arg(1);
+                $this->typePhoto = func_get_arg(2);
+                //}
+                $this->lien = func_get_arg(3);
                 break;
 
             case 3:
                 $this->evenement = func_get_arg(0);
-                $this->lien = func_get_arg(1);
-                $this->sponsor = func_get_arg(2);
+                $this->typePhoto = func_get_arg(1);
+                $this->lien = func_get_arg(2);
                 break;
 
             default:
@@ -35,7 +39,8 @@ class Photos{
     }
 
 
-    public function getId(){
+    public function getId()
+    {
         return $this->id;
     }
 
@@ -45,11 +50,12 @@ class Photos{
     }
 
 
-    public function setEvenement($evenement){
+    public function setEvenement($evenement)
+    {
 
-        if($evenement instanceof Evenement){
-            $this->evenement = $evenement;
-        }
+        // if($evenement instanceof Evenement){
+        $this->evenement = $evenement;
+        //}
 
     }
 
@@ -65,16 +71,13 @@ class Photos{
     }
 
 
-    public function getSponsor()
-    {
-        return $this->sponsor;
+    public function getTypePhoto(){
+        return $this->typePhoto;
     }
 
-    public function setSponsor($sponsor)
-    {
-        $this->sponsor = $sponsor;
+    public function setTypePhoto($typePhoto){
+        $this->typePhoto = $typePhoto;
     }
-
 
 
 }

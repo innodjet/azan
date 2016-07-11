@@ -18,15 +18,15 @@ class PhotosManager{
         try {
             global $pdo;
 
-            $pdo->beginTransaction();
-            $req = $pdo->prepare("INSERT INTO photos(lien,sponsor,ideve) VALUES (:lien, :sponsor, :evenement)");
+           // $pdo->beginTransaction();
+            $req = $pdo->prepare("INSERT INTO photos(ideve, typephoto, lien) VALUES (:evenement, :typephoto, :lien)");
 
-            $req->bindValue(':lien', $photos->getLien(), PDO::PARAM_STR);
-            $req->bindValue(':sponsor', $photos->getSponsor(), PDO::PARAM_STR);
             $req->bindValue(':evenement', $photos->getEvenement(), PDO::PARAM_INT);
+            $req->bindValue(':typephoto', $photos->getTypePhoto(), PDO::PARAM_INT);
+            $req->bindValue(':lien', $photos->getLien(), PDO::PARAM_STR);
 
             $req->execute();
-            $pdo->commit();
+            //$pdo->commit();
 
         } catch (Exception $ex) {
             $pdo->rollback();

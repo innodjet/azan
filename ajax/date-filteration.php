@@ -12,22 +12,25 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
     $startDate = date('Y-m-d',strtotime($_POST['startDate']));
     $endDate = date('Y-m-d',strtotime($_POST['endDate']));
 
-    $req = $pdo->prepare("SELECT * FROM evenement WHERE datedbeve BETWEEN  '".$startDate."' AND '".$endDate."' ");
+    $req = $pdo->prepare("SELECT * FROM evenement WHERE datepubeve <= now() and datedbeve BETWEEN  '".$startDate."' AND '".$endDate."' ");
     $req->execute();
     $data = $req->fetchAll(PDO::FETCH_ASSOC);
 
-    $str = '<div class="media">';
-    foreach($data as $key => $value){
-        //echo $value["id"];
+    if(!$data){
+        echo "<p class='alert alert-warning'>Aucun résultat</p>";
+    }else{
+        $str = '<div class="media">';
+        foreach($data as $key => $value){
 
-        $req = $pdo->prepare("SELECT p.lien FROM photos p, evenement e WHERE p.ideve=e.id and p.ideve = '".$value["id"]."'  ");
-        $req->execute();
-        $data = $req->fetchAll(PDO::FETCH_ASSOC);
+            $req = $pdo->prepare("SELECT p.lien FROM photos p, evenement e, typephoto t
+            WHERE p.ideve=e.id and p.typephoto = t.id and t.id = 5 and p.ideve = '".$value["id"]."'  ");
+            $req->execute();
+            $data = $req->fetchAll(PDO::FETCH_ASSOC);
 
-        foreach($data as $photoData){
-            //echo $photoData["lien"];
+            foreach($data as $photoData){
+                //echo $photoData["lien"];
 
-            $str.='<div class="well">
+                $str.='<div class="well">
 				<div class="row">
 				<div class="col-sm-8">
 				<a class="pull-left" href="#">
@@ -41,15 +44,18 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
 					<div class="col-sm-4"><p class="pull-right"><strong>Date début: </strong>'.date_format(date_create($value['datedbeve']),"d-m-Y").' <strong>à</strong> '.date_format(date_create($value['datedbeve']),"H:i").'</p></div>
 					</div></div><hr>';
 
+            }
         }
+        $str.= '</div>';
+        echo $str;
     }
-    $str.= '</div>';
-    echo $str;
 
 
 
 
-} else{
-    echo "<p class='alert alert-warning'>Aucun résultat</p>";
+
+
+}else{
+    echo "<p class='alert alert-warning'>Renseigner une date</p>";
 }
 ?>
