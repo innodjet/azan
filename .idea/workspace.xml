@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83c19ed0-ea0c-4a7c-b994-9b8c2eed3813" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ae.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/af.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ag.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ai.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/al.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/am.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ao.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/aq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/as.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/at.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/au.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/aw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ax.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/az.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ba.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/be.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bh.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bj.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/br.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bs.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bt.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bv.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/by.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bz.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ca.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/images/ad.png" afterPath="$PROJECT_DIR$/images/2a609685dc5cbf04df807f0e8ee0f681.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/res/x.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/date-filteration.php" afterPath="$PROJECT_DIR$/ajax/date-filteration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/upload.js" afterPath="$PROJECT_DIR$/js/upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/modele/Photos.php" afterPath="$PROJECT_DIR$/mvc/modele/Photos.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoeve.php" afterPath="$PROJECT_DIR$/nvoeve.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoevesuite.php" afterPath="$PROJECT_DIR$/nvoevesuite.php" />
     </list>
     <ignored path="azan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -136,10 +93,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="date-filteration.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="upload.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0295858">
+              <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date-filteration.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2811245">
+            <state vertical-scroll-proportion="-8.75">
               <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
               <folding>
                 <marker date="1468262648553" expanded="true" signature="431:539" placeholder="SELECT * FRO... evenement" />
@@ -429,6 +396,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -567,7 +552,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468240915259</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Recherche pub">
+      <created>1468262727439</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1468262727439</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -578,7 +569,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="165" y="180" width="1335" height="676" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -614,7 +605,8 @@
     <MESSAGE value="suite d'envoi publication (2)" />
     <MESSAGE value="suite d'envoi publication (3)" />
     <MESSAGE value="suite d'envoi publication (4)" />
-    <option name="LAST_COMMIT_MESSAGE" value="suite d'envoi publication (4)" />
+    <MESSAGE value="Recherche pub" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recherche pub" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -980,14 +972,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.5">
@@ -1067,7 +1051,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2811245">
+        <state vertical-scroll-proportion="-8.75">
           <caret line="14" column="75" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
           <folding>
             <marker date="1468262648553" expanded="true" signature="431:539" placeholder="SELECT * FRO... evenement" />
@@ -1079,6 +1063,14 @@
             <marker date="1468262648553" expanded="true" signature="1325:1338" placeholder="..." />
             <marker date="1468262648553" expanded="true" signature="1421:1640" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0295858">
+          <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
