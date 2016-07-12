@@ -1,4 +1,5 @@
 <?php
+session_start();
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(E_ALL);
@@ -22,6 +23,8 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
         $str = '<div class="media">';
         foreach($data as $key => $value){
 
+
+
             $req = $pdo->prepare("SELECT p.lien FROM photos p, evenement e, typephoto t
             WHERE p.ideve=e.id and p.typephoto = t.id and t.id = 5 and p.ideve = '".$value["id"]."'  ");
             $req->execute();
@@ -33,7 +36,7 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
                 $str.='<div class="well">
 				<div class="row">
 				<div class="col-sm-8">
-				<a class="pull-left" href="#">
+				<a class="pull-left" href="event/index.php?azan='.$value["id"].' " target="_blank">
 				<img class="media-object"  alt="64x64" style="height: 80px;" src="images/'.strtolower($photoData['lien']).'">
 					</a><div class="media-body">
 					<p id="cname"><strong>'.utf8_encode($value['nomeve']).'</strong></p>
@@ -41,7 +44,9 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
 					<p><strong>Contact :</strong> '.$value['contact'].'</p>
 
 					</div></div>
-					<div class="col-sm-4"><p class="pull-right"><strong>Date début: </strong>'.date_format(date_create($value['datedbeve']),"d-m-Y").' <strong>à</strong> '.date_format(date_create($value['datedbeve']),"H:i").'</p></div>
+					<div class="col-sm-4"><p class="pull-right">
+					<strong>Date début: </strong>'.date_format(date_create($value['datedbeve']),"d-m-Y").
+                    ' <strong>à</strong> '.date_format(date_create($value['datedbeve']),"H:i").'</p></div>
 					</div></div><hr>';
 
             }

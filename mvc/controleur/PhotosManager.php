@@ -2,23 +2,26 @@
 
 include_once 'autoload.php';
 
-class PhotosManager{
+class PhotosManager
+{
 
 
     private $pdo;
 
 
-    public function __construct($pdo){
+    public function __construct($pdo)
+    {
         $this->setPdo($pdo);
     }
 
 
-    public function createPhtotos(Photos $photos){
+    public function createPhtotos(Photos $photos)
+    {
 
         try {
             global $pdo;
 
-           // $pdo->beginTransaction();
+            // $pdo->beginTransaction();
             $req = $pdo->prepare("INSERT INTO photos(ideve, typephoto, lien) VALUES (:evenement, :typephoto, :lien)");
 
             $req->bindValue(':evenement', $photos->getEvenement(), PDO::PARAM_INT);
@@ -39,7 +42,8 @@ class PhotosManager{
 
     }
 
-    public function updatePhotos(Photos $photos){
+    public function updatePhotos(Photos $photos)
+    {
 
         try {
             global $pdo;
@@ -66,7 +70,8 @@ class PhotosManager{
 
     }
 
-    public function deletePhotos($id){
+    public function deletePhotos($id)
+    {
 
         try {
             global $pdo;
@@ -90,16 +95,33 @@ class PhotosManager{
 
     }
 
+    public function getPhotosById($value){
 
-    public function getPdo(){
+        global $pdo;
+        $req = $pdo->prepare("SELECT p.id, p.ideve, p.typephoto, p.lien  FROM  photos p, evenement e WHERE p.ideve = :val and p.ideve=e.id");
+        $req->bindValue(':val', trim($value), PDO::PARAM_STR);
+        $result = $req->execute();
+        $data = $req->fetchAll(PDO::FETCH_ASSOC);
+        $tab = array();
+        foreach ($data as $value) {
+            $tab[] = new Photos($value["id"], $value["ideve"], $value["typephoto"], $value["lien"]);
+        }
+//new Photos($data["id"], $data["ideve"], $data["typephoto"], $data["lien"]);
+
+        return $tab;
+    }
+
+
+    public function getPdo()
+    {
         return $this->pdo;
     }
 
 
-    public function setPdo($pdo){
+    public function setPdo($pdo)
+    {
         $this->pdo = $pdo;
     }
-
 
 
 }

@@ -153,6 +153,18 @@ class UserManager{
             $data["datecreation"], $data["telephone"], $data["email"]);
     }
 
+    public function getUserById($value){
+
+        global $pdo;
+        $req = $pdo->prepare("SELECT *  FROM  user WHERE iduser = :val ");
+        $req->bindValue(':val', trim($value), PDO::PARAM_STR);
+        $result = $req->execute();
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+
+        return new User($data["iduser"], $data["nomuser"], $data["prenomuser"], $data["sexe"], $data["pseudouser"],
+            $data["datecreation"], $data["telephone"], $data["email"]);
+    }
+
     public function exists($donne, $type)
     {
         global $pdo;

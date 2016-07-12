@@ -129,7 +129,7 @@ error_reporting(E_ALL);
 
 //var_dump($_SESSION);
 
-$target_path = "dossier/";
+$target_path = "images/";
 $tab = array();
 
 

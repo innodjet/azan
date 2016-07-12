@@ -58,6 +58,18 @@ class EvenementManager{
 
     }
 
+    public function getEvenementById($value){
+
+        global $pdo;
+        $req = $pdo->prepare("SELECT *  FROM  evenement WHERE id = :val ");
+        $req->bindValue(':val', trim($value), PDO::PARAM_STR);
+        $result = $req->execute();
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+
+        return new Evenement($data["id"], $data["nomeve"], $data["lieueve"], $data["datepubeve"], $data["datedbeve"],
+            $data["datefneve"], $data["contact"], $data["prix"], $data["description"], $data["iduser"], $data["idtype"]);
+    }
+
 
     public function getPdo(){
         return $this->pdo;
