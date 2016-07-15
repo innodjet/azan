@@ -54,7 +54,6 @@ if ((isset($_GET['azan'])) AND ((int)$_GET['azan'] != 0)) {
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"> -->
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/TimeCircles.css" />
 </head><!--/head-->

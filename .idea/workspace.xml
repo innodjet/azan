@@ -2,72 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83c19ed0-ea0c-4a7c-b994-9b8c2eed3813" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/about-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/contact-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/countdown-timer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/ear-piece.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/footer-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/guitar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/guitar2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/header-bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/light.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/logos.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/performar-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/twit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/twitter-bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/watch.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/TimeCircles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/animate.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/home.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/album.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/contact.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/footer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/header2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/sponsor.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/TimeCircles.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.nav.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.parallax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.scrollTo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/modernizr.custom.86080.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/smoothscroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/sendemail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event/index.php" afterPath="$PROJECT_DIR$/event/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/upload.js" afterPath="$PROJECT_DIR$/js/upload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/modele/Connection.php" afterPath="$PROJECT_DIR$/mvc/modele/Connection.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoevesuite.php" afterPath="$PROJECT_DIR$/nvoevesuite.php" />
     </list>
     <ignored path="azan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,44 +58,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.375">
-              <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1468618359093" expanded="true" signature="785:804" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="2240:2252" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="5560:5579" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="5648:5902" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="5674:5760" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="5792:5891" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="5941:5960" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="6035:6215" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="6070:6215" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="6102:6192" placeholder="..." />
-                <marker date="1468618359093" expanded="true" signature="6863:6914" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Connection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40963855">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="-14.0">
+              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/event/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="55" column="115" selection-start-line="55" selection-start-column="115" selection-end-line="55" selection-end-column="115" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1468619981604" expanded="true" signature="785:804" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="2141:2153" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5461:5480" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5549:5803" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5575:5661" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5693:5792" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5842:5861" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5936:6116" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="5971:6116" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="6003:6093" placeholder="..." />
+                <marker date="1468619981604" expanded="true" signature="6764:6815" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="54" selection-end-column="99" />
+            <state vertical-scroll-proportion="0.270415">
+              <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -232,8 +170,8 @@
         <option value="$PROJECT_DIR$/event/js/main.js" />
         <option value="$PROJECT_DIR$/event/js/TimeCircles.js" />
         <option value="$PROJECT_DIR$/event/css/main.css" />
-        <option value="$PROJECT_DIR$/event/index.php" />
         <option value="$PROJECT_DIR$/mvc/modele/Connection.php" />
+        <option value="$PROJECT_DIR$/event/index.php" />
       </list>
     </option>
   </component>
@@ -419,21 +357,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../countdown" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="122" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="124" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="144" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="151" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1047" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1040" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="122" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="124" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="142" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="144" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="148" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="151" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1047" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1040" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
@@ -541,7 +479,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468342569394</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Recherche pub(test)">
+      <created>1468618698305</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1468618698305</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -551,6 +495,7 @@
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24983211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16319677" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -558,7 +503,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="165" y="180" width="1335" height="676" />
@@ -871,6 +815,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3587684">
           <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+          <folding>
+            <marker date="1468253626897" expanded="true" signature="2523:2550" placeholder="select * fro... typeevenement" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -878,6 +825,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.875">
           <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -892,6 +840,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.78313255">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -899,6 +848,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36144578">
           <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,6 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.25">
           <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -939,6 +890,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.0">
           <caret line="2137" column="23" selection-start-line="2137" selection-start-column="23" selection-end-line="2137" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -974,39 +926,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.php">
+    <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="54" selection-end-column="99" />
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/event/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375">
-          <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="55" column="115" selection-start-line="55" selection-start-column="115" selection-end-line="55" selection-end-column="115" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1468618359093" expanded="true" signature="785:804" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="2240:2252" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="5560:5579" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="5648:5902" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="5674:5760" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="5792:5891" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="5941:5960" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="6035:6215" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="6070:6215" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="6102:6192" placeholder="..." />
-            <marker date="1468618359093" expanded="true" signature="6863:6914" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="785:804" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="2141:2153" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5461:5480" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5549:5803" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5575:5661" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5693:5792" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5842:5861" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5936:6116" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="5971:6116" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="6003:6093" placeholder="..." />
+            <marker date="1468619981604" expanded="true" signature="6764:6815" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
+    <entry file="file://$PROJECT_DIR$/js/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40963855">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.270415">
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           <folding />
         </state>
       </provider>
