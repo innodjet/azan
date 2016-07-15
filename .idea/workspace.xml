@@ -2,12 +2,70 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83c19ed0-ea0c-4a7c-b994-9b8c2eed3813" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/about-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/contact-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/countdown-timer.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/ear-piece.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/event/event3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/footer-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/guitar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/guitar2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/header-bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/logos.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/performar-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/sponsor/sponsor6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/twit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/twitter-bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/images/watch.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/TimeCircles.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/animate.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/css/responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/home.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/album.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/footer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/header.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/header2.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/include/sponsor.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/TimeCircles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.nav.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.parallax.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/jquery.scrollTo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/modernizr.custom.86080.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/js/smoothscroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/event/sendemail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/date-filteration.php" afterPath="$PROJECT_DIR$/ajax/date-filteration.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/upload.js" afterPath="$PROJECT_DIR$/js/upload.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/controleur/UserManager.php" afterPath="$PROJECT_DIR$/mvc/controleur/UserManager.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvc/modele/Connection.php" afterPath="$PROJECT_DIR$/mvc/modele/Connection.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nvoevesuite.php" afterPath="$PROJECT_DIR$/nvoevesuite.php" />
     </list>
@@ -62,12 +120,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="nvoevesuite.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/event/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
-              <folding />
+            <state vertical-scroll-proportion="-14.375">
+              <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1468618359093" expanded="true" signature="785:804" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="2240:2252" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="5560:5579" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="5648:5902" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="5674:5760" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="5792:5891" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="5941:5960" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="6035:6215" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="6070:6215" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="6102:6192" placeholder="..." />
+                <marker date="1468618359093" expanded="true" signature="6863:6914" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,113 +146,19 @@
       <file leaf-file-name="Connection.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4497992">
-              <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.40963855">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/index.php">
+        <entry file="file://$PROJECT_DIR$/js/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.25">
-              <caret line="110" column="92" selection-start-line="110" selection-start-column="86" selection-end-line="110" selection-end-column="92" />
-              <folding>
-                <marker date="1468278619742" expanded="true" signature="841:860" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="2014:2026" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="4948:4985" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="5100:5137" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="5262:5299" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="5427:5464" placeholder="..." />
-                <marker date="1468278619742" expanded="true" signature="5812:5831" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="album.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/include/album.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.541667">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="54" selection-end-column="99" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coundown-timer.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/event/js/coundown-timer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="azan.photos" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.photos">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mvc/controleur/UserManager.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="157" column="20" selection-start-line="157" selection-start-column="20" selection-end-line="157" selection-end-column="20" />
-              <folding>
-                <marker date="1468266914275" expanded="true" signature="309:432" placeholder="INSERT INTO user... " />
-                <marker date="1468266914275" expanded="true" signature="1317:1472" placeholder="UPDATE user " />
-                <marker date="1468266914275" expanded="true" signature="2484:2533" placeholder="UPDATE user " />
-                <marker date="1468266914275" expanded="true" signature="3193:3227" placeholder="DELETE FROM " />
-                <marker date="1468266914275" expanded="true" signature="3845:3897" placeholder="select passw... user" />
-                <marker date="1468266914275" expanded="true" signature="4319:4364" placeholder="SELECT * FRO... user" />
-                <marker date="1468266914275" expanded="true" signature="4803:4843" placeholder="SELECT * FRO... user" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date-filteration.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-              <folding>
-                <marker date="1468266162530" expanded="true" signature="448:556" placeholder="SELECT * FRO... evenement" />
-                <marker date="1468266162530" expanded="true" signature="839:992" placeholder="SELECT p.lie... photos" />
-                <marker date="1468266162530" expanded="true" signature="1208:1984" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1230:1978" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1257:1311" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1257:1325" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1257:1718" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1345:1469" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1397:1410" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1493:1712" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1746:1966" placeholder="..." />
-                <marker date="1468266162530" expanded="true" signature="1768:1960" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -206,10 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mvc/controleur/MessageManager.php" />
-        <option value="$PROJECT_DIR$/autoload.php" />
-        <option value="$PROJECT_DIR$/mvc/modele/User.php" />
-        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/include/footer.php" />
         <option value="$PROJECT_DIR$/searcheve.css" />
         <option value="$PROJECT_DIR$/css/inscription.css" />
@@ -244,18 +217,22 @@
         <option value="$PROJECT_DIR$/js/formValidation.js" />
         <option value="$PROJECT_DIR$/mvc/modele/Photos.php" />
         <option value="$PROJECT_DIR$/nvoeve.php" />
-        <option value="$PROJECT_DIR$/js/upload.js" />
         <option value="$PROJECT_DIR$/ajax/date-filteration.php" />
         <option value="$PROJECT_DIR$/mvc/controleur/UserManager.php" />
-        <option value="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/console.sql" />
         <option value="$PROJECT_DIR$/mvc/controleur/PhotosManager.php" />
         <option value="$PROJECT_DIR$/event/include/contact.php" />
-        <option value="$PROJECT_DIR$/event/index.php" />
         <option value="$PROJECT_DIR$/event/js/coundown-timer.js" />
-        <option value="$PROJECT_DIR$/event/js/main.js" />
         <option value="$PROJECT_DIR$/event/include/album.php" />
         <option value="$PROJECT_DIR$/nvoevesuite.php" />
+        <option value="$PROJECT_DIR$/mvc/controleur/EvenementManager.php" />
+        <option value="$PROJECT_DIR$/event/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/event/css/font-awesome.min.css" />
+        <option value="$PROJECT_DIR$/js/upload.js" />
+        <option value="$PROJECT_DIR$/event/js/main.js" />
+        <option value="$PROJECT_DIR$/event/js/TimeCircles.js" />
+        <option value="$PROJECT_DIR$/event/css/main.css" />
+        <option value="$PROJECT_DIR$/event/index.php" />
         <option value="$PROJECT_DIR$/mvc/modele/Connection.php" />
       </list>
     </option>
@@ -361,7 +338,53 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="include" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="azan" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="event" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,7 +416,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assime" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../countdown" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="122" />
@@ -414,19 +437,19 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/mvc/controleur" />
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/ajax" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/ajax" />
       <recent name="$PROJECT_DIR$/css" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/event/js" />
+      <recent name="$PROJECT_DIR$/event/css" />
+      <recent name="$PROJECT_DIR$/mvc/controleur" />
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/ajax" />
     </key>
   </component>
   <component name="RunManager">
@@ -512,7 +535,13 @@
       <option name="project" value="LOCAL" />
       <updated>1468262805975</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Recherche pub(test)">
+      <created>1468342569394</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1468342569394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -520,10 +549,10 @@
     <editor active="false" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975152" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20416386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24983211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16319677" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16319677" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -560,74 +589,14 @@
     <MESSAGE value="suite d'envoi publication (3)" />
     <MESSAGE value="suite d'envoi publication (4)" />
     <MESSAGE value="Recherche pub" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recherche pub" />
+    <MESSAGE value="Recherche pub(test)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Recherche pub(test)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02008032">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/moment.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-datetimepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="66" selection-start-line="23" selection-start-column="66" selection-end-line="23" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/inscription.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93385214">
-          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-datetimepicker.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019455252">
-          <caret line="227" column="44" selection-start-line="227" selection-start-column="40" selection-end-line="227" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12048193">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/res/x.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58232933">
-          <caret line="29" column="88" selection-start-line="29" selection-start-column="88" selection-end-line="29" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/navbar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-63.125">
@@ -667,19 +636,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34404284">
           <caret line="712" column="9" selection-start-line="712" selection-start-column="9" selection-end-line="712" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.typeevenement">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -687,13 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/searcheve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-51.25">
-          <caret line="84" column="44" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -722,14 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/headerfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48192772">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -744,9 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,7 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="106" column="21" selection-start-line="106" selection-start-column="21" selection-end-line="106" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,25 +714,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/upload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="84" selection-start-line="47" selection-start-column="84" selection-end-line="47" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34136546">
           <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/event/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -815,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nvoeve.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9598393">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -829,26 +756,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/EvenementManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44176707">
-          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <marker date="1468267152434" expanded="true" signature="333:602" placeholder="INSERT INTO user... " />
-            <marker date="1468267152434" expanded="true" signature="2252:2293" placeholder="SELECT * FRO... evenement" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.typephoto">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -856,40 +772,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30120483">
           <caret line="15" column="52" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
-          <folding>
-            <marker date="1468266162530" expanded="true" signature="448:556" placeholder="SELECT * FRO... evenement" />
-            <marker date="1468266162530" expanded="true" signature="839:992" placeholder="SELECT p.lie... photos" />
-            <marker date="1468266162530" expanded="true" signature="1208:1984" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1230:1978" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1257:1311" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1257:1325" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1257:1718" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1345:1469" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1397:1410" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1493:1712" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1746:1966" placeholder="..." />
-            <marker date="1468266162530" expanded="true" signature="1768:1960" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.46586347">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <marker date="1468270482813" expanded="true" signature="334:415" placeholder="INSERT INTO photos... " />
-            <marker date="1468270482813" expanded="true" signature="1156:1238" placeholder="UPDATE photo... " />
-            <marker date="1468270482813" expanded="true" signature="2033:2065" placeholder="DELETE FROM " />
-            <marker date="1468270482813" expanded="true" signature="2546:2654" placeholder="SELECT p.id,... photos" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,27 +783,26 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.photos">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/49fa4a5b/a82fa4c9-09b8-4d28-aa3f-259663ec51f9/azan.evenement">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -941,10 +822,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event/js/coundown-timer.js">
+    <entry file="file://$PROJECT_DIR$/event/include/album.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.541667">
+          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/PhotosManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36144578">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="111" selection-end-column="5" />
+          <folding>
+            <marker date="1468270482813" expanded="true" signature="334:415" placeholder="INSERT INTO photos... " />
+            <marker date="1468270482813" expanded="true" signature="1156:1238" placeholder="UPDATE photo... " />
+            <marker date="1468270482813" expanded="true" signature="2033:2065" placeholder="DELETE FROM " />
+            <marker date="1468270482813" expanded="true" signature="2546:2654" placeholder="SELECT p.id,... photos" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/headerfile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04016064">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6385542">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvc/controleur/EvenementManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.502008">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="111" />
+          <folding>
+            <marker date="1468346405527" expanded="true" signature="333:602" placeholder="INSERT INTO user... " />
+            <marker date="1468346405527" expanded="true" signature="2300:2341" placeholder="SELECT * FRO... evenement" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nvoeve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3587684">
+          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searcheve.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.875">
+          <caret line="105" column="44" selection-start-line="105" selection-start-column="44" selection-end-line="105" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/date-filteration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.78313255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/css/font-awesome.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36144578">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/js/modernizr.custom.86080.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29182878">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/images/watch.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.25">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.0">
+          <caret line="2137" column="23" selection-start-line="2137" selection-start-column="23" selection-end-line="2137" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="257" column="61" selection-start-line="257" selection-start-column="61" selection-end-line="257" selection-end-column="61" />
           <folding />
         </state>
       </provider>
@@ -952,47 +953,60 @@
     <entry file="file://$PROJECT_DIR$/event/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/event/include/album.php">
+    <entry file="file://$PROJECT_DIR$/event/css/TimeCircles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.541667">
-          <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/event/js/TimeCircles.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34241244">
+          <caret line="91" column="25" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="50" column="3" selection-start-line="50" selection-start-column="3" selection-end-line="54" selection-end-column="99" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/event/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="110" column="92" selection-start-line="110" selection-start-column="86" selection-end-line="110" selection-end-column="92" />
+        <state vertical-scroll-proportion="-14.375">
+          <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
           <folding>
-            <marker date="1468278619742" expanded="true" signature="841:860" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="2014:2026" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="4948:4985" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="5100:5137" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="5262:5299" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="5427:5464" placeholder="..." />
-            <marker date="1468278619742" expanded="true" signature="5812:5831" placeholder="..." />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1468618359093" expanded="true" signature="785:804" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="2240:2252" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="5560:5579" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="5648:5902" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="5674:5760" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="5792:5891" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="5941:5960" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="6035:6215" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="6070:6215" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="6102:6192" placeholder="..." />
+            <marker date="1468618359093" expanded="true" signature="6863:6914" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nvoevesuite.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="131" column="22" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvc/modele/Connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4497992">
-          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.40963855">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>

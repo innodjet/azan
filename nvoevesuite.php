@@ -144,18 +144,18 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        $target_path = $target_path . $newFileName;
+       // $target_path = $target_path . $newFileName;
         $j++;
 
         if (($_FILES["file_couv"]["size"][$i] < 1000000)) {
 
             $tab[] = ["typePhoto" => 1, "fileName" => $newFileName];
 
-            /* if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path)) {
-                echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
+             if (move_uploaded_file($_FILES['file_couv']['tmp_name'][$i], $target_path. $newFileName)) {
+              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
             } else {
-                 echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }*/
+               //  echo $j . ').<span id="error">please try again!.</span><br/><br/>';
+            }
         } else {
           //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
         }
@@ -167,18 +167,18 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        $target_path = $target_path . $newFileName;
+        //$target_path = $target_path . $newFileName;
         $j++;
 
         if (($_FILES["file_spon"]["size"][$i] < 1000000)) {
 
             $tab[] = ["typePhoto" => 3, "fileName" => $newFileName];
 
-            /* if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path)) {
-                echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
+             if (move_uploaded_file($_FILES['file_spon']['tmp_name'][$i], $target_path. $newFileName)) {
+              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
             } else {
-                 echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }*/
+                // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
+            }
         } else {
             //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
         }
@@ -190,18 +190,18 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        $target_path = $target_path . $newFileName;
+       // $target_path = $target_path . $newFileName;
         $j++;
 
         if (($_FILES["file_autr"]["size"][$i] < 1000000)) {
 
             $tab[] = ["typePhoto" => 4, "fileName" => $newFileName];
 
-            /* if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path)) {
-                 echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
+             if (move_uploaded_file($_FILES['file_autr']['tmp_name'][$i], $target_path. $newFileName)) {
+                // echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
              } else {
-                  echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-             }*/
+                 // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
+             }
         } else {
             //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
         }
@@ -213,18 +213,18 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        $target_path = $target_path . $newFileName;
+       // $target_path = $target_path . $newFileName;
         $j++;
 
         if (($_FILES["file_org"]["size"][$i] < 1000000)) {
 
             $tab[] = ["typePhoto" => 2, "fileName" => $newFileName];
 
-            /* if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path)) {
-                echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
+            if (move_uploaded_file($_FILES['file_org']['tmp_name'][$i], $target_path. $newFileName)) {
+               // echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
             } else {
-                 echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }*/
+               //  echo $j . ').<span id="error">please try again!.</span><br/><br/>';
+            }
         } else {
             //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
         }
@@ -236,18 +236,18 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        $target_path = $target_path . $newFileName;
+        //$target_path = $target_path . $newFileName;
         $j++;
 
         if (($_FILES["file_rep"]["size"][$i] < 1000000)) {
 
             $tab[] = ["typePhoto" => 5, "fileName" => $newFileName];
 
-           /* if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path)) {
-                echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
+            if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path. $newFileName)) {
+              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
             } else {
-                 echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }*/
+                // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
+            }
         } else {
             //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
         }

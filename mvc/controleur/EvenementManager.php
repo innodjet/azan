@@ -46,6 +46,8 @@ class EvenementManager{
 
             $pdo->commit();
 
+            header('Location: searcheve.php');
+
 
         } catch (Exception $ex) {
             $pdo->rollback();

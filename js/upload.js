@@ -7,7 +7,7 @@ $(document).ready(function() {
 //To add new input file field dynamically, on click of "Add More Files" button below function will be executed
 
     $('#add_more_couv').click(function() {
-        if(countCouv <=4){
+        if(countCouv <=1){
             $(this).before($("<div/>", {id: 'filediv_couv'}).fadeIn('slow').append(
                 $("<input/>", {required: 'true', accept: 'image/*', name: 'file_couv[]', type: 'file', id: 'file_couv' }),
                 $("<br/><br/>")
