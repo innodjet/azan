@@ -45,7 +45,6 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
 <link rel="stylesheet" href="css/pulierArticle.css">
 
     <link rel="stylesheet" href="css/formValidation.min.css">
-
     <script type="text/javascript" src="js/formValidation.min.js" ></script>
     <script type="text/javascript" src="js/formvalidationbootstrap.min.js" ></script>
     <script type="text/javascript" src="js/formValidation.js" ></script>

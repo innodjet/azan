@@ -165,10 +165,9 @@ class UserManager{
             $data["datecreation"], $data["telephone"], $data["email"]);
     }
 
-    public function exists($donne, $type)
-    {
+    public function exists($donne, $column){
         global $pdo;
-        $req = $pdo->prepare("SELECT COUNT(" . $type . ") FROM  user WHERE " . $type . " = :value ");
+        $req = $pdo->prepare("SELECT COUNT(" . $column . ") FROM  user WHERE " . $column . " = :value ");
         $req->bindValue(':value', trim($donne), PDO::PARAM_STR);
         $result = $req->execute();
 
@@ -177,7 +176,7 @@ class UserManager{
         } else {
             trigger_error('Error executing statement.', E_USER_ERROR);
         }
-        return $count;
+        return ($count == 0) ? true : false;
     }
 
     public function getPdo(){
