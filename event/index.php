@@ -79,7 +79,6 @@ if ((isset($_GET['azan'])) AND ((int)$_GET['azan'] != 0)) {
                     <ul class="nav navbar-nav navbar-right">
                         <li class="scroll active"><a href="#home">Home</a></li>
                         <li class="scroll"><a href="#explore">Decompte</a></li>
-                        <li class="scroll"><a href="#event">Organisateur</a></li>
                         <li class="scroll"><a href="#about">Description</a></li>
                         <li class="scroll"><a href="#sponsor">Sponsor</a></li>
                         <li class="scroll"><a href="#contact">Contact</a></li>
@@ -149,9 +148,6 @@ if ((isset($_GET['azan'])) AND ((int)$_GET['azan'] != 0)) {
     </div>
 </section><!--/#explore-->
 
-<section id="event">
-    <?php include 'include/album.php' ?>
-</section><!--/#event-->
 
 <section id="about">
     <div class="guitar2">

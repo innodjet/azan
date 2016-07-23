@@ -19,6 +19,12 @@ class Evenement
     protected $user;
     protected $typePublication;
 
+    /* Ces deux valeurs permettent de changer la couleur à l'affichage
+    sur le calendier et de contenir le lien vers la photo
+    de couverture visible sur le calendrier*/
+    protected $color;
+    protected $photoDeCouverture;
+
 
     public function __construct()
     {
@@ -62,6 +68,17 @@ class Evenement
                 $this->user = func_get_arg(8);
                 $this->typePublication = func_get_arg(9);
                 break;
+
+            case 7:
+                $this->nom = func_get_arg(0);
+                $this->photoDeCouverture = func_get_arg(1);
+                $this->lieu = func_get_arg(2);
+                $this->dateDb = func_get_arg(3);
+                $this->dateFn = func_get_arg(4);
+                $this->desription = func_get_arg(5);
+                $this->id = func_get_arg(6);
+                break;
+
 
             default:
         }
@@ -180,9 +197,9 @@ class Evenement
     public function setUser($user)
     {
 
-       // if ($user instanceof User) {
-            $this->user = $user;
-       // }
+        // if ($user instanceof User) {
+        $this->user = $user;
+        // }
 
     }
 
@@ -201,6 +218,32 @@ class Evenement
         }
 
     }
+
+
+    public function getPhotoDeCouverture()
+    {
+        return $this->photoDeCouverture;
+    }
+
+
+    public function setPhotoDeCouverture($photoDeCouverture)
+    {
+        $this->photoDeCouverture = $photoDeCouverture;
+    }
+
+
+    public function getColor()
+    {
+        return $this->color;
+    }
+
+
+    public function setColor($color)
+    {
+        $this->color = $color;
+    }
+
+
 
 
 }

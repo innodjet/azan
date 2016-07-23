@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
 
@@ -12,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href=".">Azan loo</a>
+            <a class="navbar-brand" href=".">Calentiel</a>
         </div>
 
 
@@ -21,30 +19,37 @@
 
             <ul class="nav navbar-nav">
 
-                <li class="active"><a href="#">Acceuil</a></li>
+                <li class="active"><a href=".">Acceuil</a></li>
                 <li class="dropdown">
-                    <a href="#"  data-toggle="dropdown">Compte <span class="caret"></span></a>
+                    <a href="#" data-toggle="dropdown">Compte <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Modifier profil</a></li>
-                        <li><a href="#">Modifier mot de passe</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Supprimer</a></li>
+                        <li><a href="updateAccount.php">Modifier profil</a></li>
+                        <li><a href="" data-toggle="modal"
+                               data-target="#modificationPassword">Modifier mot de passe</a></li>
                     </ul>
                 </li>
 
-                <li ><a href="#">Message</a></li>
 
                 <li class="dropdown">
                     <a href="#" " data-toggle="dropdown">Evenement <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="nvoeve.php">Publier</a></li>
-                        <li><a href="#">Participer</a></li>
                         <li><a href="searcheve.php">Recherche</a></li>
-                        <li><a href="#">A venir</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Mes publications</a></li>
                     </ul>
                 </li>
+
+                <li class="dropdown">
+                    <a href="#" " data-toggle="dropdown">Guide<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Utilisateur</a></li>
+                        <li><a href="#">Aide</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="contact.php">Contact</a></li>
+
             </ul>
 
 
@@ -56,34 +61,44 @@
                         <li>
                             <div class="row">
                                 <div class="col-md-12">
-                                    Connexion via
-                                    <div class="social-buttons">
-                                        <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
-                                        <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+                                    <!--   Connexion via
+                                      <div class="social-buttons">
+                                     !-- <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+                                          <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
                                     </div>
-                                    ou
-                                    <form class="form" role="form" method="post" action="login" accept-charset="UTF-8"
-                                          id="login-nav">
+                                    ou -->
+
+                                    <form action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>"
+                                          class="form" role="form" method="post" accept-charset="UTF-8" id="login_form">
+
                                         <div class="form-group">
-                                            <label class="sr-only" for="login">Email address</label>
-                                            <input type="text" class="form-control" id="login"
-                                                   placeholder="Adresse Email / Pseudo" required>
+                                            <label class="sr-only" for="login">Email addresse</label>
+                                            <input type="text" class="form-control" autocomplete="off" id="login"
+                                                   placeholder="Adresse Email / Pseudo" required name="login">
                                         </div>
+
                                         <div class="form-group">
-                                            <label class="sr-only" for="password">Password</label>
-                                            <input type="password" class="form-control" id="password"
-                                                   placeholder="Mot de passe" required>
-                                            <div class="help-block text-right"><a href="">Mot de passe oublié?</a>
+                                            <label class="sr-only" for="password">Mot de passe</label>
+                                            <input type="password" class="form-control" name="password"
+                                                   placeholder="Mot de passe" required autocomplete="off">
+                                            <div class="help-block text-right"><a href="" data-toggle="modal"
+                                                                                  data-target="#myModal">Mot de passe
+                                                    oublié?</a>
                                             </div>
                                         </div>
+
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+                                            <button name="signin" value="login"
+                                                    type="submit" class="btn btn-primary btn-block">Login
+                                            </button>
                                         </div>
+
                                         <div class="checkbox">
                                             <label>
                                                 <input type="checkbox"> Se souvenir de moi
                                             </label>
                                         </div>
+
                                     </form>
                                 </div>
                                 <div class="bottom text-center">
@@ -94,9 +109,114 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><span class="glyphicon glyphicon-log-out"></span>Deconnexion</a></li>
+                <li><a href="mvc/controleur/deconnexion.php"><span class="glyphicon glyphicon-log-out"></span>Deconnexion</a>
+                </li>
 
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
+
+<!-- Modal mot de passe oublié-->
+<form id="recuperation_password" method="post" class="form-horizontal">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Récupération de mot de passe</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                <input autocomplete="off" class="form-control"
+                                       name="emailVerif" placeholder="Votre Adresse email"
+                                       type="email"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Récupérer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<!-- Modification mot de passe oublié-->
+<form id="modification_password" method="post" class="form-horizontal">
+    <div class="modal fade" id="modificationPassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modification de mot de passe</h4>
+                </div>
+
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                <input autocomplete="off" class="form-control"
+                                       name="oldPassword" placeholder="Mot de passe actuel"
+                                       type="password"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                <input autocomplete="off" class="form-control"
+                                       name="newPassword" placeholder="Nouveau mot de passe"
+                                       type="password"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                <input autocomplete="off" class="form-control"
+                                       name="newPassword2" placeholder="Nouveau mot de passe (Verification)"
+                                       type="password"/>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Récupérer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<?php
+include_once 'mvc/controleur/autoload.php';
+if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['login']))
+    && (isset($_POST['password']) && ($_POST['signin'] == 'login'))
+) {
+
+    $pdo = Connection::getConnexion();
+    $userManager = new UserManager($pdo);
+    if ($client = $userManager->checkLogin($_POST['login'], $_POST['password'])) {
+        $_SESSION['id'] = $client->getId();
+    } else {
+        $msg = new FlashMessages();
+        $msg->error('Login ou mot de passe erroné! ');
+        $msg->display();
+    }
+}
+?>

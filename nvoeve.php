@@ -44,10 +44,7 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
 
 <link rel="stylesheet" href="css/pulierArticle.css">
 
-    <link rel="stylesheet" href="css/formValidation.min.css">
-    <script type="text/javascript" src="js/formValidation.min.js" ></script>
-    <script type="text/javascript" src="js/formvalidationbootstrap.min.js" ></script>
-    <script type="text/javascript" src="js/formValidation.js" ></script>
+
 
 
 </head>
@@ -88,7 +85,7 @@ include 'include/navbar.php';
                     <option value="">-- Selectionner --</option>
                     <?php
                     foreach($result as $value){
-                        echo "<option value=".$value['id'].">".$value['libelle']."</option>";
+                        echo "<option value=".$value['id'].">".utf8_encode($value['libelle'])."</option>";
                     }
                     ?>
                 </select>

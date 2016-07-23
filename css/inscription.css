@@ -7,16 +7,16 @@
 
 .box {
 
-    margin-top: 160px;
+    margin-top: 110px;
     padding: 60px 20px 00px 20px;
     margin-left: 250px;
 
     position: relative;
     width: 1000px;
-    height: 390px;
-    background-color: #fff;
+    height: 450px;
+    /*background-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25), 0 0 50px rgba(0, 0, 0, 0.1) inset;
-    border-radius: 19% 27% 16% 19% / 0% 0% 0% 0%;
+    border-radius: 19% 27% 16% 19% / 0% 0% 0% 0%;*/
 }
 
 
@@ -27,7 +27,7 @@
         padding: 10px 20px 00px 20px;
         margin-left: 5px;
         width: 350px;
-        height: 410px;
+        height: 450px;
     }
 }
 
@@ -37,7 +37,7 @@
         padding: 10px 20px 00px 20px;
         margin-left: 120px;
         width: 500px;
-        height: 400px;
+        height: 450px;
     }
 }
 
@@ -47,7 +47,7 @@
         padding: 10px 20px 00px 20px;
         margin-left: 100px;
         width: 600px;
-        height: 360px;
+        height: 450px;
      }
  }
 
@@ -57,7 +57,7 @@
          padding: 10px 20px 00px 20px;
          margin-left: 150px;
          width: 800px;
-         height: 300px;
+         height: 450px;
        /*  background-color: #55acee; */
     }
 }

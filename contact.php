@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceuil</title>
+
+    <?php include 'include/headerfile.php' ?>
+
+    <link href="css/login.css" rel="stylesheet">
+
+    <script type="text/javascript" src='js/reCaptcha2.min.js'></script>
+
+</head>
+<body>
+
+<?php
+include 'include/navbar.php';
+include_once 'mvc/controleur/autoload.php';
+
+if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['name'])) && (isset($_POST['email']))
+    && (isset($_POST['message'])) && ($_POST['submit'] == 'Envoyer')
+) {
+
+
+    $msg = new FlashMessages();
+    $msg->success('Votre message a été effectuée avec succés; notre épuique technique vous répondra dans de plus bref délai!');
+    $msg->display();
+}
+
+
+?>
+
+<div class="row" style="margin-top: 80px">
+
+
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h1 class="page-header text-center">Vous avez quelque chose à nous dire ? </h1>
+            <form class="form-horizontal" id="contact_form" method="post"
+                  action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>">
+
+                <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name"
+                               placeholder="Votre nom" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="example@domain.com"
+                               value="<?php echo htmlspecialchars($_POST['email']); ?>">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" rows="4"
+                                  name="message"><?php echo htmlspecialchars($_POST['message']); ?></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="human" class="col-sm-2 control-label">Captcha</label>
+                    <div class="col-sm-10">
+                        <div id="captchaContainer"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                        <input name="submit" type="submit" value="Envoyer" class="btn btn-primary">
+                        <button type="reset" class="btn btn-default" id="resetButton">Annuler</button>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+</body>
+</html>

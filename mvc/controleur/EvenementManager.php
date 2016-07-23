@@ -60,6 +60,24 @@ class EvenementManager{
 
     }
 
+    public function getAllEvent(){
+        global $pdo;
+
+        $req = $pdo->prepare("SELECT e.nomeve, p.lien, e.lieueve, e.datedbeve, e.datefneve, e.description, e.id
+        FROM evenement e, photos p, typephoto t
+        WHERE e.id = p.ideve AND p.typephoto = t.id AND t.code = 'couv'");
+        $result = $req->execute();
+
+        $data = $req->fetchAll(PDO::FETCH_ASSOC);
+        $tab = array();
+        foreach ($data as $value) {
+            $tab[] = new Evenement($value["nomeve"], $value["lien"], $value["lieueve"],
+                $value["datedbeve"], $value["datefneve"], $value["description"], $value["id"]);
+        }
+
+        return $tab;
+    }
+
     public function getEvenementById($value){
 
         global $pdo;

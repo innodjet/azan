@@ -20,6 +20,10 @@ switch ($_POST['type']) {
         $result = $userManager->exists($_POST["email"],"email");
         break;
 
+    case 'verifEmail':
+        $result = $userManager->existEmail($_POST["emailVerif"]);
+        break;
+
     default:
         break;
 }

@@ -34,7 +34,7 @@ class User{
                 $this->pseudo = func_get_arg(0);
                 $this->sexe = func_get_arg(1);
                 $this->email = func_get_arg(2);
-                $this->login = func_get_arg(3);
+                $this->dateCreation = func_get_arg(3);
                 $this->password = func_get_arg(4);
                 break;
 
@@ -47,7 +47,6 @@ class User{
                 $this->pseudo = func_get_arg(0);
                 $this->telephone = func_get_arg(1);
                 $this->sexe = func_get_arg(2);
-                $this->email = func_get_arg(3);
                 $this->prenom = func_get_arg(4);
                 $this->nom = func_get_arg(5);
                 $this->id = func_get_arg(6);

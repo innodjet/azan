@@ -4,51 +4,28 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
-    <title>FormDen Example</title>
-
-    <script src="js/moment.min.js" type="text/javascript"></script>
+    <title> Example</title>
 
 
-    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-
-    <script src="js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
-
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
 
 </head>
 <body>
 
 
-<div class="input-group date" id="example">
+<?php
 
-    <input type="text" class="form-control" />
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-  <span class="input-group-addon">
+include_once 'mvc/controleur/autoload.php';
+$pdo = Connection::getConnexion();
 
-    <span class="glyphicon glyphicon-calendar"></span>
-
-  </span>
-
-</div>
-
-<script type="text/javascript">
-
-    $('#example').datetimepicker();
+$manager = new UserManager($pdo);
+var_dump( $manager->checkLogin("miatowo@yahoo.fr","miatowo@yahoo.fr"));
 
 
-
-</script>
-
-
+?>
 
 
 </body>

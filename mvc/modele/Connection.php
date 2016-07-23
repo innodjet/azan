@@ -1,6 +1,8 @@
 <?php
 
-
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 class Connection
 {
 
@@ -15,23 +17,23 @@ class Connection
     private function __construct()
     {
 
-        /* $this->serveur = "mysql.info.unicaen.fr";
-          $this->dbname = "21416699_4";
-          $this->user = "21416699";
-          $this->password = "xohtheghooghohku";*/
+        /*  $this->serveur = "mysql.info.unicaen.fr";
+         $this->dbname = "21416699_4";
+         $this->user = "21416699";
+         $this->password = "xohtheghooghohku";*/
 
 
-          $this->serveur = "localhost";
-          $this->dbname = "azan";
-          $this->user = "root";
-          $this->password = "Serge1992";
+        $this->serveur = "localhost";
+         $this->dbname = "azan";
+         $this->user = "root";
+         $this->password = "Serge1992";
 
         try {
             if (is_null(self::$conn)) {
                 $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
                 self::$conn = new PDO('mysql:host=' . $this->serveur . ';dbname=' . $this->dbname . '', $this->user, $this->password, $pdo_options);
             }
-        } catch (PDOException $ex) {
+        }catch (PDOException $ex) {
             die('Connection échouée :' . $ex->getMessage());
         }
 

@@ -2,32 +2,39 @@
 
 include_once 'autoload.php';
 
-class UserManager{
+class UserManager
+{
 
     private $pdo;
 
-    public function __construct($pdo){
+    public function __construct($pdo)
+    {
         $this->setPdo($pdo);
     }
 
 
-    public function createUser(User $user){
+    public function createUser(User $user)
+    {
 
         try {
             global $pdo;
 
             $pdo->beginTransaction();
             $req = $pdo->prepare("INSERT INTO user(pseudouser,datecreation,sexe,email,password)
-            VALUES (:pseudo, :date, :sexe, :email, :password)");
+            VALUES (:pseudo, :dat, :sexe, :email, :password)");
 
             $req->bindValue(':pseudo', $user->getPseudo(), PDO::PARAM_STR);
-            $req->bindValue(':date', $user->getDateCreation());
+            $req->bindValue(':dat', $user->getDateCreation());
             $req->bindValue(':sexe', $user->getSexe(), PDO::PARAM_STR);
             $req->bindValue(':email', $user->getEmail(), PDO::PARAM_STR);
             $req->bindValue(':password', password_hash($user->getPassword(), PASSWORD_DEFAULT), PDO::PARAM_STR);
 
             $req->execute();
             $pdo->commit();
+
+            header('Location: inscription.php');
+            exit;
+
 
         } catch (Exception $ex) {
             $pdo->rollback();
@@ -40,7 +47,8 @@ class UserManager{
 
     }
 
-    public function updateUser(User $user){
+    public function updateUser(User $user)
+    {
 
         try {
             global $pdo;
@@ -71,7 +79,8 @@ class UserManager{
 
     }
 
-    public function updateUserPassword(User $user){
+    public function updateUserPassword(User $user)
+    {
 
         try {
             global $pdo;
@@ -96,7 +105,8 @@ class UserManager{
 
     }
 
-    public function deleteUser($id){
+    public function deleteUser($id)
+    {
 
         try {
             global $pdo;
@@ -123,28 +133,42 @@ class UserManager{
     public function checkLogin($login, $password){
 
         global $pdo;
-        if(Utilities::VerifierAdresseMail(trim($login))==1){
-            $column="email";
-        }else{$column="pseudouser"; }
+        $column = (Utilities::VerifierAdresseMail(trim($login)) == 1) ? "email" : "pseudouser";
 
-        $req = $pdo->prepare("select password from user where '".$column."' = :val ");
+        $req = $pdo->prepare("select * from user where " . $column . " = :val ");
         $req->bindValue(':val', trim($login), PDO::PARAM_STR);
         $result = $req->execute();
 
-        $data = $result->fetch(PDO::FETCH_ASSOC);
+            $data = $req->fetch(PDO::FETCH_ASSOC);
 
-        if(password_verify($password, $data["password"])){
-            return $this->getUser($column, $login);
-        }else{
-            return null;
-        }
+       return (password_verify($password, $data["password"])) ? $this->getUser($column, $login) : null;
 
     }
 
-    public function getUser($column, $value){
+    public function checkEmailOrPseudo($login){
 
         global $pdo;
-        $req = $pdo->prepare("SELECT *  FROM  user WHERE ".$column." = :val ");
+
+        $column = (Utilities::VerifierAdresseMail(trim($login)) == 1) ? "email" : "pseudouser";
+
+        $req = $pdo->prepare("SELECT COUNT(" . $column . ") FROM  user WHERE " . $column . " = :value ");
+        $req->bindValue(':value', trim($login), PDO::PARAM_STR);
+        $result = $req->execute();
+
+        if ($result) {
+            $count = $req->fetchColumn();
+        } else {
+            trigger_error('Error executing statement.', E_USER_ERROR);
+        }
+        return ($count == 1) ? true : false;
+
+    }
+
+    public function getUser($column, $value)
+    {
+
+        global $pdo;
+        $req = $pdo->prepare("SELECT *  FROM  user WHERE " . $column . " = :val ");
         $req->bindValue(':val', trim($value), PDO::PARAM_STR);
         $result = $req->execute();
         $data = $req->fetch(PDO::FETCH_ASSOC);
@@ -153,7 +177,8 @@ class UserManager{
             $data["datecreation"], $data["telephone"], $data["email"]);
     }
 
-    public function getUserById($value){
+    public function getUserById($value)
+    {
 
         global $pdo;
         $req = $pdo->prepare("SELECT *  FROM  user WHERE iduser = :val ");
@@ -179,14 +204,29 @@ class UserManager{
         return ($count == 0) ? true : false;
     }
 
-    public function getPdo(){
+    public function existEmail($donne){
+        global $pdo;
+        $req = $pdo->prepare("SELECT COUNT(email) FROM  user WHERE email = :value ");
+        $req->bindValue(':value', trim($donne), PDO::PARAM_STR);
+        $result = $req->execute();
+
+        if ($result) {
+            $count = $req->fetchColumn();
+        } else {
+            trigger_error('Error executing statement.', E_USER_ERROR);
+        }
+        return ($count == 1) ? true : false;
+    }
+
+    public function getPdo()
+    {
         return $this->pdo;
     }
 
-    public function setPdo($pdo){
+    public function setPdo($pdo)
+    {
         $this->pdo = $pdo;
     }
-
 
 
 }

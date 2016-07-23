@@ -8,11 +8,33 @@
 
     <link href="css/login.css" rel="stylesheet">
 
+
+    <!-- Include events calendar css file -->
+    <link rel="stylesheet" href="tiva/assets/css/calendar.css">
+    <link rel="stylesheet" href="tiva/assets/css/calendar_full.css">
+    <link rel="stylesheet" href="tiva/assets/css/calendar_compact.css">
+
+    <!-- Include config file -->
+    <script src="tiva/config/config.js"></script>
+
+    <!-- Include events calendar language file -->
+    <script src="tiva/assets/languages/en.js"></script>
+
+    <!-- Include events calendar js file -->
+    <script src="tiva/assets/js/calendar.js"></script>
+
+
 </head>
 <body>
 
-
 <?php include 'include/navbar.php'?>
+
+<div class="row" style="margin-top: 80px">
+
+    <div class="tiva-events-calendar full" data-source="php"></div>
+
+
+</div>
 
 
 </body>

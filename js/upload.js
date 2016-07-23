@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('#add_more_couv').click(function() {
         if(countCouv <=1){
             $(this).before($("<div/>", {id: 'filediv_couv'}).fadeIn('slow').append(
-                $("<input/>", {required: 'true', accept: 'image/*', name: 'file_couv[]', type: 'file', id: 'file_couv' }),
+                $("<input/>", {required: 'true', accept: 'image/*', class:'form-control', name: 'file_couv[]', type: 'file', id: 'file_couv' }),
                 $("<br/><br/>")
             ));
             countCouv++;
@@ -21,7 +21,7 @@ $(document).ready(function() {
     $('#add_more_spon').click(function() {
         if(countSpon <=4){
             $(this).before($("<div/>", {id: 'filediv_spon'}).fadeIn('slow').append(
-                $("<input/>", {required: 'true', accept: 'image/*',name: 'file_spon[]', type: 'file', id: 'file_spon'}),
+                $("<input/>", { accept: 'image/*',name: 'file_spon[]', type: 'file', id: 'file_spon'}),
                 $("<br/><br/>")
             ));
             countSpon++;
@@ -33,7 +33,7 @@ $(document).ready(function() {
     $('#add_more_autr').click(function() {
         if(countAutr <=4){
             $(this).before($("<div/>", {id: 'filediv_autr'}).fadeIn('slow').append(
-                $("<input/>", {required: 'true', accept: 'image/*',name: 'file_autr[]', type: 'file', id: 'file_autr'}),
+                $("<input/>", { accept: 'image/*', name: 'file_autr[]', type: 'file', id: 'file_autr'}),
                 $("<br/><br/>")
             ));
             countAutr++;

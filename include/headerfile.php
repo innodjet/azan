@@ -22,3 +22,10 @@
 
 <link href="css/loginform.css" rel="stylesheet">
 
+
+<link rel="stylesheet" href="css/formValidation.min.css">
+
+<script type="text/javascript" src="js/formValidation.min.js"></script>
+<script type="text/javascript" src="js/formvalidationbootstrap.min.js"></script>
+<script type="text/javascript" src="js/formValidation.js"></script>
+

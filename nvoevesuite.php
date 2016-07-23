@@ -10,18 +10,11 @@ include_once 'mvc/controleur/autoload.php';
 
     <?php include 'include/headerfile.php' ?>
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"
-            integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
 
     <link href="css/upload.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/pulierArticle.css">
 
-    <link rel="stylesheet" href="css/formValidation.min.css">
-
-    <script type="text/javascript" src="js/formValidation.min.js"></script>
-    <script type="text/javascript" src="js/formvalidationbootstrap.min.js"></script>
-    <script type="text/javascript" src="js/formValidation.js"></script>
 
     <script type="text/javascript" src="js/upload.js"></script>
 
@@ -42,57 +35,60 @@ include_once 'mvc/controleur/autoload.php';
         <div class="row">
 
             <div class="col-xs-12 col-md-12 col-lg-3">
-                <h4>Photo de couverture</h4>
-                <div id="filediv_couv"><input required accept="image/*"
-                                              name="file_couv[]" type="file" id="file_couv"/></div>
-                <br/>
 
+                <div class="form-group">
+                    <h4>Photo de couverture</h4>
+                    <div id="filediv_couv">
+                        <input class="form-control" accept="image/*"
+                               name="file_couv[]" type="file" id="file_couv"/></div>
+                </div>
+                <br/>
                 <input type="button" id="add_more_couv" class="upload" value="Plus de photos"/>
 
             </div>
 
 
             <div class="col-xs-12 col-md-12 col-lg-3 ">
-                <h4>Sponsor</h4>
-                <div id="filediv_spon"><input required accept="image/*"
-                                              name="file_spon[]" type="file" id="file_spon"/></div>
-                <br/>
 
+                <div class="form-group">
+                    <h4>Sponsor</h4>
+                    <div id="filediv_spon"><input accept="image/*"
+                                                  name="file_spon[]" type="file" id="file_spon"/></div>
+                </div>
+                <br/>
                 <input type="button" id="add_more_spon" class="upload" value="Plus de photos"/>
+
             </div>
 
+            <div class="col-xs-12 col-md-12 col-lg-3 ">
 
-            <div class="col-xs-12 col-md-12 col-lg-3">
-                <h4>Autres</h4>
-                <div id="filediv_autr"><input required accept="image/*"
-                                              name="file_autr[]" type="file" id="file_autr"/></div>
+                <div class="form-group">
+                    <h4>Photo représentative</h4>
+                    <div id="filediv_rep">
+                        <input accept="image/*" id="file_rep" type="file"
+                               class="form-control" name="file_rep[]"/>
+                    </div>
+                </div>
+
                 <br/>
 
+            </div>
+
+            <div class="col-xs-12 col-md-12 col-lg-3">
+
+                <div class="form-group">
+                    <h4>Autres</h4>
+                    <div id="filediv_autr"><input accept="image/*" name="file_autr[]"
+                                                  type="file" id="file_autr"/></div>
+                </div>
+
+                <br/>
                 <input type="button" id="add_more_autr" class="upload" value="Plus de photos"/>
             </div>
 
 
-            <div class="col-xs-12 col-md-12 col-lg-3 ">
-                <h4>Organisateur</h4>
-                <div id="filediv_org"><input required accept="image/*"
-                                             name="file_org[]" type="file" id="file_org"/></div>
-                <br/>
-
-                <input type="button" id="add_more_org" class="upload" value="Plus de photos"/>
-            </div>
-
         </div>
-
-        <div class="row">
-
-            <div class="col-xs-12 col-md-12 col-lg-3 ">
-                <h4>Photo représentative</h4>
-                <div id="filediv_rep"><input required accept="image/*"
-                                             name="file_rep[]" type="file" id="file_rep"/></div>
-                <br/>
-            </div>
-
-        </div>
+        <br/>
 
 
         <div class="form-group">
@@ -109,10 +105,6 @@ include_once 'mvc/controleur/autoload.php';
                     <span class="glyphicon glyphicon-ok"></span> Valider
                 </button>
 
-                <button type="reset" class="btn3d btn btn-danger btn-lg">
-                    <span class="glyphicon glyphicon-remove"></span> Annuler
-                </button>
-
             </div>
         </div>
 
@@ -127,14 +119,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-//var_dump($_SESSION);
-
 $target_path = "images/";
 $tab = array();
 
 
 if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
-    $j = 0;
+
     global $target_path, $tab;
     $tab = array();
 
@@ -144,113 +134,62 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-       // $target_path = $target_path . $newFileName;
-        $j++;
 
-        if (($_FILES["file_couv"]["size"][$i] < 1000000)) {
+        $tab[] = ["typePhoto" => 1, "fileName" => $newFileName];
 
-            $tab[] = ["typePhoto" => 1, "fileName" => $newFileName];
-
-             if (move_uploaded_file($_FILES['file_couv']['tmp_name'][$i], $target_path. $newFileName)) {
-              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
-            } else {
-               //  echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }
+        if (move_uploaded_file($_FILES['file_couv']['tmp_name'][$i], $target_path . $newFileName)) {
         } else {
-          //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
         }
+
     }
 
-    for ($i = 0; $i < count($_FILES['file_spon']['name']); $i++){
+    for ($i = 0; $i < count($_FILES['file_spon']['name']); $i++) {
 
         $ext = explode('.', basename($_FILES['file_spon']['name'][$i]));
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        //$target_path = $target_path . $newFileName;
-        $j++;
 
-        if (($_FILES["file_spon"]["size"][$i] < 1000000)) {
+        $tab[] = ["typePhoto" => 3, "fileName" => $newFileName];
 
-            $tab[] = ["typePhoto" => 3, "fileName" => $newFileName];
-
-             if (move_uploaded_file($_FILES['file_spon']['tmp_name'][$i], $target_path. $newFileName)) {
-              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
-            } else {
-                // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }
+        if (move_uploaded_file($_FILES['file_spon']['tmp_name'][$i], $target_path . $newFileName)) {
         } else {
-            //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
         }
+
     }
 
-    for ($i = 0; $i < count($_FILES['file_autr']['name']); $i++){
+    for ($i = 0; $i < count($_FILES['file_autr']['name']); $i++) {
 
         $ext = explode('.', basename($_FILES['file_autr']['name'][$i]));
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-       // $target_path = $target_path . $newFileName;
-        $j++;
 
-        if (($_FILES["file_autr"]["size"][$i] < 1000000)) {
+        $tab[] = ["typePhoto" => 4, "fileName" => $newFileName];
 
-            $tab[] = ["typePhoto" => 4, "fileName" => $newFileName];
-
-             if (move_uploaded_file($_FILES['file_autr']['tmp_name'][$i], $target_path. $newFileName)) {
-                // echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
-             } else {
-                 // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-             }
+        if (move_uploaded_file($_FILES['file_autr']['tmp_name'][$i], $target_path . $newFileName)) {
         } else {
-            //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
         }
     }
 
-    for ($i = 0; $i < count($_FILES['file_org']['name']); $i++){
 
-        $ext = explode('.', basename($_FILES['file_org']['name'][$i]));
-        $file_extension = end($ext);
-
-        $newFileName = md5(uniqid()) . "." . $file_extension;
-       // $target_path = $target_path . $newFileName;
-        $j++;
-
-        if (($_FILES["file_org"]["size"][$i] < 1000000)) {
-
-            $tab[] = ["typePhoto" => 2, "fileName" => $newFileName];
-
-            if (move_uploaded_file($_FILES['file_org']['tmp_name'][$i], $target_path. $newFileName)) {
-               // echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
-            } else {
-               //  echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }
-        } else {
-            //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
-        }
-    }
-
-    for ($i = 0; $i < count($_FILES['file_rep']['name']); $i++){
+    for ($i = 0; $i < count($_FILES['file_rep']['name']); $i++) {
 
         $ext = explode('.', basename($_FILES['file_rep']['name'][$i]));
         $file_extension = end($ext);
 
         $newFileName = md5(uniqid()) . "." . $file_extension;
-        //$target_path = $target_path . $newFileName;
-        $j++;
 
-        if (($_FILES["file_rep"]["size"][$i] < 1000000)) {
+        $tab[] = ["typePhoto" => 5, "fileName" => $newFileName];
 
-            $tab[] = ["typePhoto" => 5, "fileName" => $newFileName];
-
-            if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path. $newFileName)) {
-              //  echo $j . ').<span id="noerror">Image uploaded successfully!.</span><br/><br/>';
-            } else {
-                // echo $j . ').<span id="error">please try again!.</span><br/><br/>';
-            }
+        if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path . $newFileName)) {
         } else {
-            //  echo $j . ').<span id="error">Le fichier ne doit pas dépasser 1MB </span><br/><br/>';
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
         }
+
     }
 
 
@@ -263,6 +202,10 @@ if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
     $photoManager = new PhotosManager($pdo);
 
     $evenementManager->createEvenement($evenement, $tab);
+
+    $msg = new FlashMessages();
+    $msg->success('Enregistrement effectuée avec succés;');
+    $msg->display();
 
 
 }
