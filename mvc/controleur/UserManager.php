@@ -20,21 +20,20 @@ class UserManager
             global $pdo;
 
             $pdo->beginTransaction();
-            $req = $pdo->prepare("INSERT INTO user(pseudouser,datecreation,sexe,email,password)
-            VALUES (:pseudo, :dat, :sexe, :email, :password)");
+            $req = $pdo->prepare("INSERT INTO user(pseudouser,datecreation,sexe,email,password,codeactivation)
+            VALUES (:pseudo, :dat, :sexe, :email, :password, :codeactivation)");
 
             $req->bindValue(':pseudo', $user->getPseudo(), PDO::PARAM_STR);
             $req->bindValue(':dat', $user->getDateCreation());
             $req->bindValue(':sexe', $user->getSexe(), PDO::PARAM_STR);
             $req->bindValue(':email', $user->getEmail(), PDO::PARAM_STR);
             $req->bindValue(':password', password_hash($user->getPassword(), PASSWORD_DEFAULT), PDO::PARAM_STR);
+            $req->bindValue(':codeactivation', Utilities::codeActivation(), PDO::PARAM_STR);
 
             $req->execute();
             $pdo->commit();
 
-            header('Location: inscription.php');
-            exit;
-
+            // Gestion d'envoi de mail à faire
 
         } catch (Exception $ex) {
             $pdo->rollback();
@@ -105,6 +104,32 @@ class UserManager
 
     }
 
+    function updateUserByColumn($column, $valeur, $id)
+    {
+
+        try {
+            global $pdo;
+
+            $pdo->beginTransaction();
+            $req = $pdo->prepare("UPDATE user set " . $column . "  = :valeur  WHERE iduser = :id");
+
+            $req->bindValue(':valeur', $valeur, PDO::PARAM_INT);
+            $req->bindValue(':id', $id, PDO::PARAM_INT);
+
+            $req->execute();
+            $pdo->commit();
+
+        } catch (Exception $ex) {
+            $pdo->rollback();
+            echo 'Erreur : ' . $ex->getMessage() . '<br />';
+            echo 'N° : ' . $ex->getCode();
+            echo "Error: " . $req . "<br>" . $pdo->error;
+
+            exit();
+        }
+
+    }
+
     public function deleteUser($id)
     {
 
@@ -130,22 +155,24 @@ class UserManager
 
     }
 
-    public function checkLogin($login, $password){
+    public function checkLogin($login, $password)
+    {
 
         global $pdo;
         $column = (Utilities::VerifierAdresseMail(trim($login)) == 1) ? "email" : "pseudouser";
 
         $req = $pdo->prepare("select * from user where " . $column . " = :val ");
         $req->bindValue(':val', trim($login), PDO::PARAM_STR);
-        $result = $req->execute();
+        $req->execute();
 
-            $data = $req->fetch(PDO::FETCH_ASSOC);
+        $data = $req->fetch(PDO::FETCH_ASSOC);
 
-       return (password_verify($password, $data["password"])) ? $this->getUser($column, $login) : null;
+        return (password_verify($password, $data["password"])) ? $this->getUser($column, $login) : null;
 
     }
 
-    public function checkEmailOrPseudo($login){
+    public function checkEmailOrPseudo($login)
+    {
 
         global $pdo;
 
@@ -168,13 +195,15 @@ class UserManager
     {
 
         global $pdo;
-        $req = $pdo->prepare("SELECT *  FROM  user WHERE " . $column . " = :val ");
-        $req->bindValue(':val', trim($value), PDO::PARAM_STR);
-        $result = $req->execute();
+        $req = $pdo->prepare("SELECT iduser,codeactivation,active,
+                          nomuser,prenomuser,pseudouser,datecreation,sexe,telephone,email  FROM  user WHERE  $column = :val ");
+        $req->bindValue(':val', $value, PDO::PARAM_STR);
+        $req->execute();
         $data = $req->fetch(PDO::FETCH_ASSOC);
 
-        return new User($data["iduser"], $data["nomuser"], $data["prenomuser"], $data["sexe"], $data["pseudouser"],
-            $data["datecreation"], $data["telephone"], $data["email"]);
+
+        return new User($data["iduser"], $data["codeactivation"], $data["active"], $data["nomuser"], $data["prenomuser"], $data["pseudouser"],
+            $data["datecreation"], $data["sexe"], $data["telephone"], $data["email"]);
     }
 
     public function getUserById($value)
@@ -190,7 +219,8 @@ class UserManager
             $data["datecreation"], $data["telephone"], $data["email"]);
     }
 
-    public function exists($donne, $column){
+    public function exists($donne, $column)
+    {
         global $pdo;
         $req = $pdo->prepare("SELECT COUNT(" . $column . ") FROM  user WHERE " . $column . " = :value ");
         $req->bindValue(':value', trim($donne), PDO::PARAM_STR);
@@ -204,7 +234,8 @@ class UserManager
         return ($count == 0) ? true : false;
     }
 
-    public function existEmail($donne){
+    public function existEmail($donne)
+    {
         global $pdo;
         $req = $pdo->prepare("SELECT COUNT(email) FROM  user WHERE email = :value ");
         $req->bindValue(':value', trim($donne), PDO::PARAM_STR);

@@ -9,6 +9,19 @@ error_reporting(E_ALL);
 $pdo = Connection::getConnexion();
 
 $userManager = new UserManager($pdo);
+$evenementManager = new EvenementManager($pdo);
+
+/*$event = $evenementManager->getEvenementById(41, "Array");
+echo  '{"Evenement":['.json_encode($event, JSON_FORCE_OBJECT|JSON_UNESCAPED_UNICODE).']}' ;*/
+
+if($_POST['rowid']){
+    $id = $_POST['rowid'];
+    $event = $evenementManager->getEvenementById($id, "Array");
+    echo  '{"Evenement":['.json_encode($event, JSON_FORCE_OBJECT|JSON_UNESCAPED_UNICODE).']}' ;
+
+}else{
+
+
 
 switch ($_POST['type']) {
 
@@ -33,7 +46,7 @@ switch ($_POST['type']) {
     ));
 
 
-
+}
 
 
 ?>

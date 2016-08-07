@@ -1,10 +1,16 @@
+<?php
+include_once 'mvc/controleur/autoload.php';
+session_start();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Acceuil</title>
 
-    <?php include 'include/headerfile.php'?>
+    <?php include 'include/headerfile.php' ?>
 
     <link href="css/login.css" rel="stylesheet">
 
@@ -27,14 +33,22 @@
 </head>
 <body>
 
-<?php include 'include/navbar.php'?>
+
+
+<?php include 'include/navbar.php' ?>
+
+<?php
+
+$msg = new FlashMessages();
+$msg->display();
+?>
 
 <div class="row" style="margin-top: 80px">
 
     <div class="tiva-events-calendar full" data-source="php"></div>
 
-
 </div>
+
 
 
 </body>

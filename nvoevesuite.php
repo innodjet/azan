@@ -1,6 +1,7 @@
 <?php
-session_start();
 include_once 'mvc/controleur/autoload.php';
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
@@ -22,7 +23,104 @@ include_once 'mvc/controleur/autoload.php';
 <body>
 
 
-<?php include 'include/navbar.php' ?>
+<?php include 'include/navbar.php' ;
+
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$target_path = "images/";
+$tab = array();
+
+
+if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submitPublication'] == 'valider')) {
+
+    global $target_path, $tab;
+    $tab = array();
+
+    for ($i = 0; $i < count($_FILES['file_couv']['name']); $i++) {
+
+        $ext = explode('.', basename($_FILES['file_couv']['name'][$i]));
+        $file_extension = end($ext);
+
+        $newFileName = md5(uniqid()) . "." . $file_extension;
+
+        $tab[] = ["typePhoto" => 1, "fileName" => $newFileName];
+
+        if (move_uploaded_file($_FILES['file_couv']['tmp_name'][$i], $target_path . $newFileName)) {
+        } else {
+             echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
+        }
+
+    }
+
+    for ($i = 0; $i < count($_FILES['file_spon']['name']); $i++) {
+
+        $ext = explode('.', basename($_FILES['file_spon']['name'][$i]));
+        $file_extension = end($ext);
+
+        $newFileName = md5(uniqid()) . "." . $file_extension;
+
+        $tab[] = ["typePhoto" => 3, "fileName" => $newFileName];
+
+        if (move_uploaded_file($_FILES['file_spon']['tmp_name'][$i], $target_path . $newFileName)) {
+        } else {
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
+        }
+
+    }
+
+    for ($i = 0; $i < count($_FILES['file_autr']['name']); $i++) {
+
+        $ext = explode('.', basename($_FILES['file_autr']['name'][$i]));
+        $file_extension = end($ext);
+
+        $newFileName = md5(uniqid()) . "." . $file_extension;
+
+        $tab[] = ["typePhoto" => 4, "fileName" => $newFileName];
+
+        if (move_uploaded_file($_FILES['file_autr']['tmp_name'][$i], $target_path . $newFileName)) {
+        } else {
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
+        }
+    }
+
+
+    for ($i = 0; $i < count($_FILES['file_rep']['name']); $i++) {
+
+        $ext = explode('.', basename($_FILES['file_rep']['name'][$i]));
+        $file_extension = end($ext);
+
+        $newFileName = md5(uniqid()) . "." . $file_extension;
+
+        $tab[] = ["typePhoto" => 5, "fileName" => $newFileName];
+
+        if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path . $newFileName)) {
+        } else {
+            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
+        }
+
+    }
+
+
+    $pdo = Connection::getConnexion();
+
+    $evenementManager = new EvenementManager($pdo);
+    $photoManager = new PhotosManager($pdo);
+
+    $evenementManager->createEvenement($_SESSION['Evenement'], $tab);
+    unset($_SESSION['Evenement']);
+
+    $msg = new FlashMessages();
+    $msg->success('Votre évènement est pris en compte avec succés;', 'index.php');
+
+
+
+}
+
+?>
 
 
 <form class="form-horizontal" id="formPubSuite" enctype="multipart/form-data" method="post"
@@ -100,8 +198,8 @@ include_once 'mvc/controleur/autoload.php';
                     <span class="glyphicon glyphicon-arrow-left"></span> Retour
                 </button>
 
-                <button type="submit" class="btn btn-success btn-lg btn3d"
-                        id="valider" name="submit" value="valider">
+                <button type="submit" class="btn btn-success btn-lg btn3d" data-loading-text="Enregistrement ..."
+                        id="valider" name="submitPublication" value="valider">
                     <span class="glyphicon glyphicon-ok"></span> Valider
                 </button>
 
@@ -115,100 +213,6 @@ include_once 'mvc/controleur/autoload.php';
 <?php
 
 
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-$target_path = "images/";
-$tab = array();
-
-
-if (($_SERVER['REQUEST_METHOD'] == 'POST') && ($_POST['submit'] == 'valider')) {
-
-    global $target_path, $tab;
-    $tab = array();
-
-    for ($i = 0; $i < count($_FILES['file_couv']['name']); $i++) {
-
-        $ext = explode('.', basename($_FILES['file_couv']['name'][$i]));
-        $file_extension = end($ext);
-
-        $newFileName = md5(uniqid()) . "." . $file_extension;
-
-        $tab[] = ["typePhoto" => 1, "fileName" => $newFileName];
-
-        if (move_uploaded_file($_FILES['file_couv']['tmp_name'][$i], $target_path . $newFileName)) {
-        } else {
-            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
-        }
-
-    }
-
-    for ($i = 0; $i < count($_FILES['file_spon']['name']); $i++) {
-
-        $ext = explode('.', basename($_FILES['file_spon']['name'][$i]));
-        $file_extension = end($ext);
-
-        $newFileName = md5(uniqid()) . "." . $file_extension;
-
-        $tab[] = ["typePhoto" => 3, "fileName" => $newFileName];
-
-        if (move_uploaded_file($_FILES['file_spon']['tmp_name'][$i], $target_path . $newFileName)) {
-        } else {
-            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
-        }
-
-    }
-
-    for ($i = 0; $i < count($_FILES['file_autr']['name']); $i++) {
-
-        $ext = explode('.', basename($_FILES['file_autr']['name'][$i]));
-        $file_extension = end($ext);
-
-        $newFileName = md5(uniqid()) . "." . $file_extension;
-
-        $tab[] = ["typePhoto" => 4, "fileName" => $newFileName];
-
-        if (move_uploaded_file($_FILES['file_autr']['tmp_name'][$i], $target_path . $newFileName)) {
-        } else {
-            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
-        }
-    }
-
-
-    for ($i = 0; $i < count($_FILES['file_rep']['name']); $i++) {
-
-        $ext = explode('.', basename($_FILES['file_rep']['name'][$i]));
-        $file_extension = end($ext);
-
-        $newFileName = md5(uniqid()) . "." . $file_extension;
-
-        $tab[] = ["typePhoto" => 5, "fileName" => $newFileName];
-
-        if (move_uploaded_file($_FILES['file_rep']['tmp_name'][$i], $target_path . $newFileName)) {
-        } else {
-            // echo  "<span id='error'>Erreur lors d'envoi du fichier au serveur! Ressayer </span><br/><br/>";
-        }
-
-    }
-
-
-    $pdo = Connection::getConnexion();
-    $evenement = new Evenement($_SESSION['nomEve'], $_SESSION['lieuEve'], $_SESSION['dateMiseEnLigneEve'], $_SESSION['datedebutEve'],
-        $_SESSION['datefinEve'], $_SESSION['contactEve'], $_SESSION['prixEve'], $_SESSION['descriptionEve'], $_SESSION['iduser'],
-        $_SESSION['typeEve']);
-
-    $evenementManager = new EvenementManager($pdo);
-    $photoManager = new PhotosManager($pdo);
-
-    $evenementManager->createEvenement($evenement, $tab);
-
-    $msg = new FlashMessages();
-    $msg->success('Enregistrement effectuée avec succés;');
-    $msg->display();
-
-
-}
 ?>
 
 

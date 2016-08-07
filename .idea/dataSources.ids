@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
   <data-source name="MySQL - azan@localhost" uuid="a82fa4c9-09b8-4d28-aa3f-259663ec51f9">
-    <database-info product="MySQL" version="5.7.12-0ubuntu1.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+    <database-info product="MySQL" version="5.7.13-0ubuntu0.16.04.2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
       <extra-name-characters>#@</extra-name-characters>
       <identifier-quote-string>`</identifier-quote-string>
     </database-info>
@@ -233,21 +233,24 @@
         <data-type>int(11)</data-type>
         <default-expression>&apos;0&apos;</default-expression>
       </column>
-      <key id="67" parent="7" name="PRIMARY">
+      <column id="67" parent="7" name="codeactivation">
+        <data-type>varchar(200)</data-type>
+      </column>
+      <key id="68" parent="7" name="PRIMARY">
         <columns>iduser</columns>
         <primary>1</primary>
       </key>
-      <column id="68" parent="8" name="id">
+      <column id="69" parent="8" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="69" parent="8" name="code">
+      <column id="70" parent="8" name="code">
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="70" parent="8" name="nom">
+      <column id="71" parent="8" name="nom">
         <data-type>varchar(100)</data-type>
       </column>
-      <key id="71" parent="8" name="PRIMARY">
+      <key id="72" parent="8" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

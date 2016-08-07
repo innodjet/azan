@@ -1,4 +1,6 @@
 
+<link rel="shortcut icon" type="image/x-icon"  href="images/res/calentiel.ico" />
+
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
       integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
@@ -28,4 +30,6 @@
 <script type="text/javascript" src="js/formValidation.min.js"></script>
 <script type="text/javascript" src="js/formvalidationbootstrap.min.js"></script>
 <script type="text/javascript" src="js/formValidation.js"></script>
+
+
 

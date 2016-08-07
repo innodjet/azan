@@ -1,3 +1,52 @@
+<?php
+include_once 'mvc/controleur/autoload.php';
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+
+/*var_dump($_COOKIE);
+
+if (isset($_COOKIE['Nefertiti'])) {
+    parse_str($_COOKIE['Nefertiti']);
+//echo "on la vue";
+    echo $pseudo;
+} */
+
+
+if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['login']))
+    && (isset($_POST['password']) && ($_POST['signin'] == 'login'))
+) {
+
+    $pdo = Connection::getConnexion();
+    $userManager = new UserManager($pdo);
+    if ($client = $userManager->checkLogin($_POST['login'], $_POST['password'])) {
+        $_SESSION['User'] = $client;
+
+        /*  if (isset($_POST['autoconnect']) && ($_POST['autoconnect'] == 'yes') ) {
+
+   setcookie("Nefertiti", 'rci='.$_POST['login'].'&egypte='.md5($_POST['password']).'&togo=0&email='.$client->getEmail(),
+       time()+3600*24*10, "/", '/azan/', false, false);
+
+              ini_set('display_errors', 1);
+              ini_set('display_startup_errors', 1);
+              error_reporting(E_ALL);
+
+              echo "Sa passe";
+          } */
+
+    } else {
+        $msg = new FlashMessages();
+        $msg->error('Login ou mot de passe erroné ! ');
+        $msg->display();
+    }
+
+}
+
+
+?>
+
 <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
 
@@ -36,7 +85,7 @@
                         <li><a href="nvoeve.php">Publier</a></li>
                         <li><a href="searcheve.php">Recherche</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">Mes publications</a></li>
+                        <li><a href="mesPublications.php">Mes publications</a></li>
                     </ul>
                 </li>
 
@@ -95,7 +144,8 @@
 
                                         <div class="checkbox">
                                             <label>
-                                                <input type="checkbox"> Se souvenir de moi
+                                                <input type="checkbox" name="autoconnect" value="yes"> Se souvenir de
+                                                moi
                                             </label>
                                         </div>
 
@@ -203,20 +253,3 @@
 </form>
 
 
-<?php
-include_once 'mvc/controleur/autoload.php';
-if (($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['login']))
-    && (isset($_POST['password']) && ($_POST['signin'] == 'login'))
-) {
-
-    $pdo = Connection::getConnexion();
-    $userManager = new UserManager($pdo);
-    if ($client = $userManager->checkLogin($_POST['login'], $_POST['password'])) {
-        $_SESSION['id'] = $client->getId();
-    } else {
-        $msg = new FlashMessages();
-        $msg->error('Login ou mot de passe erroné! ');
-        $msg->display();
-    }
-}
-?>

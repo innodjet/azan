@@ -100,8 +100,9 @@ class PhotosManager
         global $pdo;
         $req = $pdo->prepare("SELECT p.id, p.ideve, p.typephoto, p.lien  FROM  photos p, evenement e WHERE p.ideve = :val and p.ideve=e.id");
         $req->bindValue(':val', trim($value), PDO::PARAM_STR);
-        $result = $req->execute();
+        $req->execute();
         $data = $req->fetchAll(PDO::FETCH_ASSOC);
+
         $tab = array();
         foreach ($data as $value) {
             $tab[] = new Photos($value["id"], $value["ideve"], $value["typephoto"], $value["lien"]);
@@ -109,6 +110,20 @@ class PhotosManager
 //new Photos($data["id"], $data["ideve"], $data["typephoto"], $data["lien"]);
 
         return $tab;
+    }
+
+    public function getPhotoRepById($value){
+
+        global $pdo;
+        $req = $pdo->prepare("SELECT p.id, p.ideve, p.typephoto, p.lien  FROM  photos p, evenement e, typephoto t
+       WHERE t.id=1 AND e.id = :val AND p.ideve=e.id AND t.id=p.typephoto");
+        $req->bindValue(':val', trim($value), PDO::PARAM_INT);
+        $req->execute();
+        $data = $req->fetch(PDO::FETCH_ASSOC);
+
+        return new Photos($data["id"], $data["ideve"], $data["typephoto"], $data["lien"]);
+
+
     }
 
 

@@ -1,26 +1,25 @@
 <?php
+include_once 'mvc/controleur/autoload.php';
 session_start();
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 
 if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isset($_POST['lieuEve']))
     && (isset($_POST['prixEve']))  && (isset($_POST['dateMiseEnLigneEve']))  && (isset($_POST['datedebutEve']))  && (isset($_POST['datefinEve']))
-    && (isset($_POST['contactEve'])) && (isset($_POST['descriptionEve'])) && ($_POST['valider'] == 'continuer' ) ){
+    && (isset($_POST['contactEve'])) && (isset($_POST['descriptionEve'])) && ($_POST['firtsPart'] == 'continuer' ) ){
 
-    $_SESSION["nomEve"]=$_POST["nomEve"];
-    $_SESSION['lieuEve']=$_POST['lieuEve'];
-    $_SESSION['prixEve']=$_POST['prixEve'];
-    $_SESSION['dateMiseEnLigneEve']=$_POST['dateMiseEnLigneEve'];
-    $_SESSION['datedebutEve']=$_POST['datedebutEve'];
-    $_SESSION['datefinEve']=$_POST['datefinEve'];
-    $_SESSION['contactEve']=$_POST['contactEve'];
-    $_SESSION['descriptionEve']=$_POST['descriptionEve'];
+    $evenement = new Evenement($_POST['nomEve'], $_POST['lieuEve'], $_POST['dateMiseEnLigneEve'], $_POST['datedebutEve'],
+        $_POST['datefinEve'], $_POST['contactEve'], $_POST['prixEve'], $_POST['descriptionEve'], $_SESSION['User']->getId(), $_POST['type']);
 
-    $_SESSION['iduser']= "1";
-    $_SESSION['typeEve']=$_POST['type'];
 
-    header('Location: nvoevesuite.php');
+     $_SESSION['Evenement'] = $evenement;
 
+    Utilities::POST_redirect('nvoevesuite.php');
 }
-
 
 ?>
 <!DOCTYPE html>
@@ -50,16 +49,11 @@ if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['nomEve'])) && (isse
 </head>
 <body>
 
+<?php include 'include/navbar.php';
 
-<?php
-include_once 'mvc/controleur/autoload.php';
-include 'include/navbar.php';
 ?>
 
-
-
-
-<form class="form-horizontal" id="formPub" method="post"
+<form class="form-horizontal" id="formPub" method="post" role="form"
       action="<?php echo htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES); ?>" >
     <fieldset>
 
@@ -78,7 +72,7 @@ include 'include/navbar.php';
 
 
         <!-- Type evenement -->
-        <div class="form-group">
+        <div class="form-group ">
             <label class="col-md-4 control-label" >Type événement</label>
             <div class="col-md-2">
                 <select name="type" class="form-control">
@@ -96,9 +90,9 @@ include 'include/navbar.php';
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Nom</label>
             <div class="col-md-6">
-                <input  name="nomEve" value="<?php echo $_SESSION['nomEve'];?>"
+                <input  name="nomEve" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getNom();} ?>"
                         type="text" placeholder="Nom de l'évènement"
-                       class="form-control input-md" autocomplete="off">
+                        class="form-control input-md" autocomplete="off">
                 <span class="help-block">Ex: Avépozo Party</span>
             </div>
         </div>
@@ -107,9 +101,9 @@ include 'include/navbar.php';
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Lieu</label>
             <div class="col-md-6">
-                <input  name="lieuEve" value="<?php echo $_SESSION['lieuEve'];?>"
+                <input  name="lieuEve" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getLieu();} ?>"
                         type="text" placeholder="Lieu de l'évènement"
-                       class="form-control input-md" autocomplete="off" >
+                        class="form-control input-md" autocomplete="off" >
                 <span class="help-block">Avépozo Beach</span>
             </div>
         </div>
@@ -118,10 +112,10 @@ include 'include/navbar.php';
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Prix</label>
             <div class="col-md-4">
-                <input  name="prixEve" value="<?php echo $_SESSION['prixEve'];?>"
+                <input  name="prixEve" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getPrix();} ?>"
                         type="text" placeholder="Prix de la party"
-                       class="form-control input-md" autocomplete="off">
-                <span class="help-block">25000</span>
+                        class="form-control input-md" autocomplete="off">
+                <span class="help-block">Mettez 0 Si gratuit</span>
             </div>
         </div>
 
@@ -131,7 +125,7 @@ include 'include/navbar.php';
             <label class="col-md-4 control-label">Date de mise en ligne</label>
             <div class="col-md-4 date">
                 <div class="input-group input-append date" id="dateML">
-                    <input id="inputdateML" value="<?php echo $_SESSION['dateMiseEnLigneEve'];?>"
+                    <input id="inputdateML" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getDatePub();} ?>"
                            type="text" autocomplete="off"
                            class="form-control" name="dateMiseEnLigneEve" />
                     <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
@@ -145,7 +139,7 @@ include 'include/navbar.php';
             <label class="col-md-4 control-label">Date début</label>
             <div class="col-md-4 date">
                 <div class="input-group input-append date" id="dateDb">
-                    <input type="text" value="<?php echo $_SESSION['datedebutEve'];?>"
+                    <input type="text" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getDateDb();} ?>"
                            class="form-control" name="datedebutEve" autocomplete="off"/>
                     <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
@@ -157,7 +151,7 @@ include 'include/navbar.php';
             <label class="col-md-4 control-label">Date fin</label>
             <div class="col-md-4 date">
                 <div class="input-group input-append date" id="dateFin">
-                    <input type="text" value="<?php echo $_SESSION['datefinEve'];?>"
+                    <input type="text" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getDateFn();} ?>"
                            class="form-control" autocomplete="off" name="datefinEve" />
                     <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
                 </div>
@@ -168,7 +162,7 @@ include 'include/navbar.php';
         <div class="form-group">
             <label class="col-md-4 control-label" for="textinput">Contact</label>
             <div class="col-md-6">
-                <input id="textinput" value="<?php echo $_SESSION['contactEve'];?>"
+                <input id="textinput" value="<?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getContact();} ?>"
                        name="contactEve" type="text" autocomplete="off"
                        placeholder="Contact" class="form-control input-md">
                 <span class="help-block">Tel: 00228 90 97 89 71</span>
@@ -179,9 +173,8 @@ include 'include/navbar.php';
         <div class="form-group">
             <label class="col-md-4 control-label" >Description</label>
             <div class="col-md-4">
-                <textarea class="form-control"
-                          placeholder="Description" id="textarea" name="descriptionEve">
-                    <?php echo trim($_SESSION['descriptionEve']);?>
+                <textarea class="form-control" id="textarea" name="descriptionEve">
+                    <?php if(isset($_SESSION['Evenement'])){echo $_SESSION['Evenement']->getDesription();} ?>
                 </textarea>
             </div>
         </div>
@@ -193,7 +186,7 @@ include 'include/navbar.php';
 
 
                 <button
-                    type="submit" class="btn btn-success btn-lg btn3d" name="valider" value="continuer">
+                    type="submit" class="btn btn-success btn-lg btn3d" name="firtsPart" value="continuer">
                     <span class="glyphicon glyphicon-ok"></span> Valider & Continuer</button>
 
                 <button type="reset" class="btn3d btn btn-danger btn-lg">
@@ -203,6 +196,7 @@ include 'include/navbar.php';
 
     </fieldset>
 </form>
+
 
 
 <script>

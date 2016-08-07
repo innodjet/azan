@@ -41,6 +41,7 @@ $(document).ready(function () {
                 }
             },
             dateMiseEnLigneEve: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: 'Renseigner la date de la mise en ligne'
@@ -52,6 +53,7 @@ $(document).ready(function () {
                 }
             },
             datedebutEve: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: 'Renseigner la date de début'
@@ -63,6 +65,7 @@ $(document).ready(function () {
                 }
             },
             datefinEve: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: 'Renseigner la date de fin'
@@ -92,6 +95,7 @@ $(document).ready(function () {
                 }
             },
             type: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: "Selectionner un type d'événement"
@@ -308,7 +312,7 @@ $(document).ready(function () {
                             type: 'pseudo'
                         },
                         type: 'POST'
-                    },
+                    }
                 }
             }
         }
@@ -347,7 +351,7 @@ $(document).ready(function () {
                         message: 'Adresse email incorrecte'
                     },
                     remote: {
-                        message: 'Cette adresse email inconnue',
+                        message: 'Pas de compte trouvé pour cette adresse email.',
                         url: 'ajax/verif.php',
                         data: {
                             type: 'verifEmail'
@@ -369,6 +373,7 @@ $(document).ready(function () {
         },
         fields: {
             login: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: "Renseigner ce champ"
@@ -377,6 +382,7 @@ $(document).ready(function () {
 
             },
             password: {
+                icon: 'false',
                 validators: {
                     notEmpty: {
                         message: "Mot de passe obligatoire"
@@ -387,7 +393,7 @@ $(document).ready(function () {
     });
 
 
-    $('#contact_form').formValidation({
+    $('#contactForm').formValidation({
         framework: 'bootstrap',
         icon: {
             valid: 'glyphicon glyphicon-ok',
@@ -398,7 +404,7 @@ $(document).ready(function () {
             reCaptcha2: {
                 element: 'captchaContainer',
                 theme: 'light',
-                siteKey: '6LcLyyUTAAAAALpihjhai1kq1GspJ1FRgoupJMde',
+                siteKey: '6LcdISYTAAAAAIiPl0FhhsRQlyRWHqTkPxh1LDnl',
                 timeout: 120,
                 message: 'Le captcha est invalide'
             }
@@ -432,11 +438,6 @@ $(document).ready(function () {
         }
     });
 
-    $('#resetButton').on('click', function() {
-        // Reset the recaptcha
-        FormValidation.AddOn.reCaptcha2.reset('captchaContainer');
-
-    });
 
 
     $('#formPubSuite').formValidation({

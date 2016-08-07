@@ -6,6 +6,18 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 
+if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['sexe'])) && ($_POST['inscription'] == 'submit')
+    &&  (isset($_POST['pseudo'])) && isset($_POST['email']) && (isset($_POST['password'])) ) {
+    include_once 'mvc/controleur/autoload.php';
+    $pdo = Connection::getConnexion();
+    $userManager = new UserManager($pdo);
+
+    $userManager->createUser(new User($_POST['pseudo'], $_POST['sexe'], $_POST['email'], date('Y-m-d'), $_POST['password']));
+
+    $msg = new FlashMessages();
+    $msg->success("Inscription effectuée avec succès; un message de confirmation vous a été envoyé à cette adresse email : ".$_POST['email'], 'index.php');
+}
+
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -30,18 +42,7 @@ error_reporting(E_ALL);
 
     <?php
 
-    if( ($_SERVER['REQUEST_METHOD'] == 'POST') && (isset($_POST['sexe'])) && ($_POST['inscription'] == 'submit')
-        &&  (isset($_POST['pseudo'])) && isset($_POST['email']) && (isset($_POST['password'])) ) {
-        include_once 'mvc/controleur/autoload.php';
-        $pdo = Connection::getConnexion();
-        $userManager = new UserManager($pdo);
 
-        $userManager->createUser(new User($_POST['pseudo'], $_POST['sexe'], $_POST['email'], date('Y-m-d'), $_POST['password']));
-
-        $msg = new FlashMessages();
-        $msg->success('Enregistrement effectuée avec succés; un message de confirmation vous a été envoyé à cette adresse email <b>' . $_POST['email'] . '</b>');
-        $msg->display();
-    }
     ?>
 
     <fieldset>

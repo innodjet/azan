@@ -1,7 +1,5 @@
 <?php
 
-include_once 'User.php';
-include_once 'TypeEvenement.php';
 
 
 class Evenement
@@ -85,7 +83,7 @@ class Evenement
 
     }
 
-
+//$photoManager->getPhotoRepById($evenement[$i]->getId())->getLien();
     public function getId()
     {
         return $this->id;
@@ -213,9 +211,9 @@ class Evenement
     public function setTypePublication($typePublication)
     {
 
-        if ($typePublication instanceof TypeEvenement) {
+       // if ($typePublication instanceof TypeEvenement) {
             $this->typePublication = $typePublication;
-        }
+       // }
 
     }
 

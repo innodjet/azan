@@ -13,10 +13,12 @@ if((!empty($_POST['startDate'])&&(!empty($_POST['endDate'])))) {	// Check whethe
     $startDate = date('Y-m-d',strtotime($_POST['startDate']));
     $endDate = date('Y-m-d',strtotime($_POST['endDate']));
 
-    $req = $pdo->prepare("SELECT * FROM evenement WHERE datepubeve <= now() and datedbeve BETWEEN  '".$startDate."' AND '".$endDate."' ");
+    $req = $pdo->prepare("SELECT * FROM evenement WHERE datepubeve <= now() and datefneve >= now() and datedbeve BETWEEN  '".$startDate."' AND '".$endDate."' ");
     $req->execute();
     $data = $req->fetchAll(PDO::FETCH_ASSOC);
 
+echo $startDate." ".$endDate;
+   // var_dump($data);
     if(!$data){
         echo "<p class='alert alert-warning'>Aucun résultat</p>";
     }else{

@@ -1,7 +1,8 @@
 <?php
 
 
-class User{
+class User
+{
 
     private $id;
     protected $nom;
@@ -12,9 +13,12 @@ class User{
     protected $telephone;
     protected $email;
     protected $password;
+    protected $codeActivation;
+    protected $active;
 
 
-    public function __construct(){
+    public function __construct()
+    {
 
         $num = func_num_args();
 
@@ -52,15 +56,17 @@ class User{
                 $this->id = func_get_arg(6);
                 break;
 
-            case 8:
+            case 10:
                 $this->id = func_get_arg(0);
-                $this->nom = func_get_arg(1);
-                $this->prenom = func_get_arg(2);
-                $this->sexe = func_get_arg(3);
-                $this->pseudo = func_get_arg(4);
-                $this->dateCreation = func_get_arg(5);
-                $this->telephone = func_get_arg(6);
-                $this->email = func_get_arg(7);
+                $this->codeActivation = func_get_arg(1);
+                $this->active = func_get_arg(2);
+                $this->nom = func_get_arg(3);
+                $this->prenom = func_get_arg(4);
+                $this->pseudo = func_get_arg(5);
+                $this->dateCreation = func_get_arg(6);
+                $this->sexe = func_get_arg(7);
+                $this->telephone = func_get_arg(8);
+                $this->email = func_get_arg(9);
                 break;
 
             default:
@@ -165,6 +171,27 @@ class User{
     }
 
 
+    public function getCodeActivation()
+    {
+        return $this->codeActivation;
+    }
+
+
+    public function setCodeActivation($codeActivation)
+    {
+        $this->codeActivation = $codeActivation;
+    }
+
+
+    public function getActive()
+    {
+        return $this->active;
+    }
+
+    public function setActive($active)
+    {
+        $this->active = $active;
+    }
 
 
 }

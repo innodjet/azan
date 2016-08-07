@@ -1,14 +1,16 @@
 <?php
 
 
-class Utilities {
+class Utilities
+{
 
-   public static function POST_redirect($url) {
-        header("Location: ".htmlspecialchars_decode($url), true, 303);
+    public static function POST_redirect($url){
+        header("Location: " . htmlspecialchars_decode($url), true, 303);
         die;
     }
 
-    public static function VerifierAdresseMail($adresse){
+    public static function VerifierAdresseMail($adresse)
+    {
         //Adresse mail trop longue (254 octets max)
         if (strlen($adresse) > 254) {
             return '0';
@@ -33,6 +35,36 @@ class Utilities {
         } else {
             return '2';
         }
+    }
+
+    public static function codeActivation()
+    {
+
+        $characts = 'abcdefghijklmnopqrstuvwxyz';
+        $characts .= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $characts .= '1234567890';
+        $code_aleatoire = '';
+
+        for ($i = 0; $i < 100; $i++) {    //90 est le nombre de caractères{
+            $code_aleatoire .= substr($characts, rand() % (strlen($characts)), 1);
+        }
+
+        return $code_aleatoire;
+    }
+
+    public static function sendEmail($destinataire, $sujet, $message){
+
+        $to  = $destinataire. ', ';
+        $to .= 'contact@calentiel.info';
+
+
+        $subject = $sujet;
+
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+
+        mail($to, $subject, utf8_encode($message), $headers);
+
     }
 
 

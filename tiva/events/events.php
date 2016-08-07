@@ -7,6 +7,7 @@ error_reporting(E_ALL);
 include_once "../../mvc/controleur/autoload.php";
 
 $pdo = Connection::getConnexion();
+
 $evenementManager = new EvenementManager($pdo);
 $evenement = $evenementManager->getAllEvent();
 $events = array();
@@ -36,7 +37,7 @@ foreach ($evenement as $db_event) {
 	}
 	$event->color = $i;
 	$event->location = $db_event->getLieu(); // Adapt with your suitable db field. If your db has not this field, please let it be : $event->location = "";
-	$event->description = $db_event->getDesription()."<a target='_blank' href=http://localhost/azan/event/index.php?azan=".$db_event->getId()."> Plus de Détail </a>"; // Adapt with your suitable db field. If your db has not this field, please let it be : $event->description = "";
+	$event->description = substr($db_event->getDesription(), 0, 10)."... <a target='_blank' href=http://calentiel.info/event/index.php?azan=".$db_event->getId()."> Plus de Détail </a>"; // Adapt with your suitable db field. If your db has not this field, please let it be : $event->description = "";
 	array_push($events, $event);
 
 }
