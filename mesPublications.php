@@ -113,7 +113,9 @@ $msg->display();
                         <?php } ?>
 
 
-                        <button name="delete" value="<?php echo $evenement[$i]->getId(); ?>"
+                        <button name="deletePub" value="<?php echo $evenement[$i]->getId(); ?>"
+                                data-id="<?php echo $evenement[$i]->getId(); ?>" id="deletePub"
+                                    href="<?php echo $evenement[$i]->getId(); ?>"
                                 class="btn btn-sm btn-danger glyphicon glyphicon-trash" data-toggle="confirmation">
                         </button>
                     </td>
@@ -260,7 +262,8 @@ $msg->display();
                             <div class="form-group">
                                 <label class="col-md-4 control-label">Description</label>
                                 <div class="col-md-4">
-                                    <textarea class="form-control" name="descriptionEve" id="idDescriptionEve"></textarea>
+                                    <textarea class="form-control" name="descriptionEve"
+                                              id="idDescriptionEve"></textarea>
                                 </div>
                             </div>
 
@@ -316,7 +319,19 @@ $msg->display();
 
         $(document).ready(function () {
 
-            $('[data-toggle="confirmation"]').confirmation('show');
+
+
+            $('[data-toggle="confirmation"]').confirmation({
+                href: function(elem){
+                    console.log( $(elem).attr('href') );
+                },
+                singleton: true,
+                onConfirm: function (e) {
+
+
+                }
+            });
+
 
             $('#dateML').datetimepicker({
                 format: 'DD-MM-YYYY',
@@ -355,7 +370,7 @@ $msg->display();
                     success: function (data) {
                         var obj = JSON.parse(data);
                         // console.log(obj.Evenement[0].lieueve + " " + obj.Evenement[0].datedbeve);
-                         console.log(obj.Evenement[0].description);
+                        console.log(obj.Evenement[0].description);
                         var parts = obj.Evenement[0].datepubeve.split('-');
 
 
