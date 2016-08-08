@@ -37,14 +37,14 @@ session_start();
 
 <?php include 'include/navbar.php' ?>
 
+
+
+<div class="row" style="margin-top: 80px">
 <?php
 
 $msg = new FlashMessages();
 $msg->display();
 ?>
-
-<div class="row" style="margin-top: 80px">
-
     <div class="tiva-events-calendar full" data-source="php"></div>
 
 </div>
